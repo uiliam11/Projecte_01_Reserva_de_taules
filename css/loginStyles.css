@@ -11,7 +11,11 @@ body {
 
 canvas {
     display: block;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
+}
+
+small {
+    color: rgb(103, 203, 249);
 }
 
 
