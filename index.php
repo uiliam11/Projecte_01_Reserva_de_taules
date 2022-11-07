@@ -22,18 +22,16 @@
     <div id="particles-js">
         <div class="login-box">
             <h2>Login</h2>
-            <form>
+            <form action="./functions/validacion.php" method="POST">
                 <div class="user-box">
-                    <input type="text" name="" required="">
+                    <input type="text" name="username">
                     <label>Usuario</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="" required="">
+                    <input type="password" name="password">
                     <label>Contraseña</label>
                 </div>
-                <small>¡Comprueba que has introduccido bien el mail y la contraseña!</small>
-                <br>
-                <a href="">Submit</a>
+                <button type="submit">Submit</button>
                 <br>
             </form>
         </div>
