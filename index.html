@@ -24,14 +24,16 @@
             <h2>Login</h2>
             <form action="./functions/validacion.php" method="POST">
                 <div class="user-box">
-                    <input type="text" name="username">
+                    <input type="text" name="username" required="">
                     <label>Usuario</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" name="password">
+                    <input type="password" name="password" required="">
                     <label>Contraseña</label>
                 </div>
-                <button type="submit">Submit</button>
+                <small>¡Comprueba que has introduccido bien el mail y la contraseña!</small>
+                <br>
+                <button type="submit">Enviar</button>
                 <br>
             </form>
         </div>
