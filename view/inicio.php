@@ -43,13 +43,160 @@
     </div>
     <!-- MAPA RESTAURANTE -->
     <div class="region-rest">
-        <div class="widget-rest" id="salon-1">
-            <p>Hola</p>
-        </div>
-        <div class="widget-rest" id="salon-2">
-            
+        <div class="widget-rest" id="salon">
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="cont"><button></button></div></td>
+                    <td></td>
+                    <td><div class="cont"><button></button></div></td>
+                    <td></td>
+                    <td><div class="cont"><button></button></div></td>
+                    <td></td>
+                    <td colspan="2"><div class="cont"><button></button></div></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
         <div class="widget-rest" id="terraza">
+            
+        </div>
+        <div class="widget-rest" id="sala-privada-1">
+            
+        </div>
+        <div class="widget-rest" id="sala-privada-2">
             
         </div>
     </div>
