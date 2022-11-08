@@ -15,7 +15,7 @@ function login($username, $password) {
         foreach ($valid_login1 as $key => $user) {
             $_SESSION['id_admin'] = $user['id'];
         }
-        echo "<script>location.href = '../user.php';</script>";
+        echo "<script>location.href = '../view/user.php';</script>";
     }else{
         $query = "SELECT * FROM tbl_man WHERE username = '{$username}' AND password = '{$password}'";
         $valid_login = mysqli_query($conexion, $query);
@@ -24,7 +24,7 @@ function login($username, $password) {
             foreach ($valid_login as $key => $user) {
                 $_SESSION['id_prof'] = $user['id'];
             }
-            echo "<script>location.href = '../man.php';</script>";
+            echo "<script>location.href = '../view/man.php';</script>";
         }else {
             echo "<script>location.href = '../index.html';</script>";
         }
