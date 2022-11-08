@@ -33,7 +33,7 @@
                 </div>
                 <small>¡Comprueba que has introduccido bien el mail y la contraseña!</small>
                 <br>
-                <button type="submit">Enviar</button>
+                <button type="submit">Entrar</button>
                 <br>
             </form>
         </div>

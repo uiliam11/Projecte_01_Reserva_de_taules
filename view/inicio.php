@@ -30,7 +30,7 @@
                 <li><a href="#">Primer Salón</a></li>
                 <li><a href="#">Segundo Salón</a></li>
                 <li><a href="#">Terraza</a></li>
-                <li class="justify-end"><a href="../functions/cerrarSesion.php">Cerrar sesión</a></li>
+                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
             <!-- <div id="nav-container">
                 <div class="toggle-icon">
