@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2022 a las 15:13:25
+-- Tiempo de generación: 08-11-2022 a las 17:22:56
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 7.4.30
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bd_dooku`
 --
+CREATE DATABASE IF NOT EXISTS `bd_dooku` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+USE `bd_dooku`;
 
 -- --------------------------------------------------------
 
@@ -27,13 +29,15 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `tbl_man`
 --
 
-CREATE TABLE `tbl_man` (
-  `id_man` int(11) NOT NULL,
+DROP TABLE IF EXISTS `tbl_man`;
+CREATE TABLE IF NOT EXISTS `tbl_man` (
+  `id_man` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_man` varchar(20) COLLATE utf8mb4_spanish_ci NOT NULL,
   `dni` char(9) COLLATE utf8mb4_spanish_ci NOT NULL,
   `username` varchar(10) COLLATE utf8mb4_spanish_ci NOT NULL,
-  `password` varchar(256) COLLATE utf8mb4_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+  `password` varchar(256) COLLATE utf8mb4_spanish_ci NOT NULL,
+  PRIMARY KEY (`id_man`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `tbl_man`
@@ -48,12 +52,14 @@ INSERT INTO `tbl_man` (`id_man`, `nombre_man`, `dni`, `username`, `password`) VA
 -- Estructura de tabla para la tabla `tbl_mesa`
 --
 
-CREATE TABLE `tbl_mesa` (
-  `id_mesa` int(11) NOT NULL,
+DROP TABLE IF EXISTS `tbl_mesa`;
+CREATE TABLE IF NOT EXISTS `tbl_mesa` (
+  `id_mesa` int(11) NOT NULL AUTO_INCREMENT,
   `ubicacion` varchar(20) COLLATE utf8mb4_spanish_ci NOT NULL,
   `capacidad` int(2) NOT NULL,
-  `disponibilidad` varchar(10) COLLATE utf8mb4_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+  `disponibilidad` varchar(10) COLLATE utf8mb4_spanish_ci NOT NULL,
+  PRIMARY KEY (`id_mesa`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `tbl_mesa`
@@ -61,7 +67,7 @@ CREATE TABLE `tbl_mesa` (
 
 INSERT INTO `tbl_mesa` (`id_mesa`, `ubicacion`, `capacidad`, `disponibilidad`) VALUES
 (1, 'sala_privada', 8, 'Libre'),
-(2, 'terrassa', 4, 'Libre'),
+(2, 'terrassa', 4, 'Ocupado  '),
 (3, 'principal', 2, 'Libre'),
 (4, 'sala_privada', 6, 'Ocupada');
 
@@ -71,14 +77,18 @@ INSERT INTO `tbl_mesa` (`id_mesa`, `ubicacion`, `capacidad`, `disponibilidad`) V
 -- Estructura de tabla para la tabla `tbl_reserva`
 --
 
-CREATE TABLE `tbl_reserva` (
-  `id_reserva` int(11) NOT NULL,
+DROP TABLE IF EXISTS `tbl_reserva`;
+CREATE TABLE IF NOT EXISTS `tbl_reserva` (
+  `id_reserva` int(11) NOT NULL AUTO_INCREMENT,
   `id_user` int(11) NOT NULL,
   `id_mesa` int(11) NOT NULL,
   `nom_persona` varchar(20) COLLATE utf8mb4_spanish_ci NOT NULL,
   `hora_inici` datetime NOT NULL DEFAULT current_timestamp(),
-  `hora_fi` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+  `hora_fi` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_reserva`),
+  KEY `id_user` (`id_user`),
+  KEY `id_mesa` (`id_mesa`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `tbl_reserva`
@@ -94,13 +104,15 @@ INSERT INTO `tbl_reserva` (`id_reserva`, `id_user`, `id_mesa`, `nom_persona`, `h
 -- Estructura de tabla para la tabla `tbl_user`
 --
 
-CREATE TABLE `tbl_user` (
-  `id_user` int(11) NOT NULL,
+DROP TABLE IF EXISTS `tbl_user`;
+CREATE TABLE IF NOT EXISTS `tbl_user` (
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_user` varchar(20) COLLATE utf8mb4_spanish_ci NOT NULL,
   `dni` char(9) COLLATE utf8mb4_spanish_ci NOT NULL,
   `username` varchar(10) COLLATE utf8mb4_spanish_ci NOT NULL,
-  `password` varchar(256) COLLATE utf8mb4_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+  `password` varchar(256) COLLATE utf8mb4_spanish_ci NOT NULL,
+  PRIMARY KEY (`id_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `tbl_user`
@@ -112,64 +124,6 @@ INSERT INTO `tbl_user` (`id_user`, `nombre_user`, `dni`, `username`, `password`)
 (3, 'alejandro', '05389476R', 'alejandro1', 'qweQWE123'),
 (4, 'pedro', '49841030F', 'pedro11', 'qweQWE123'),
 (5, 'orlando', '93283549B', 'orlando11', 'qweQWE123');
-
---
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `tbl_man`
---
-ALTER TABLE `tbl_man`
-  ADD PRIMARY KEY (`id_man`);
-
---
--- Indices de la tabla `tbl_mesa`
---
-ALTER TABLE `tbl_mesa`
-  ADD PRIMARY KEY (`id_mesa`);
-
---
--- Indices de la tabla `tbl_reserva`
---
-ALTER TABLE `tbl_reserva`
-  ADD PRIMARY KEY (`id_reserva`),
-  ADD KEY `id_user` (`id_user`),
-  ADD KEY `id_mesa` (`id_mesa`);
-
---
--- Indices de la tabla `tbl_user`
---
-ALTER TABLE `tbl_user`
-  ADD PRIMARY KEY (`id_user`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
---
-
---
--- AUTO_INCREMENT de la tabla `tbl_man`
---
-ALTER TABLE `tbl_man`
-  MODIFY `id_man` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT de la tabla `tbl_mesa`
---
-ALTER TABLE `tbl_mesa`
-  MODIFY `id_mesa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT de la tabla `tbl_reserva`
---
-ALTER TABLE `tbl_reserva`
-  MODIFY `id_reserva` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de la tabla `tbl_user`
---
-ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
