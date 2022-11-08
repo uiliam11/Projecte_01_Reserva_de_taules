@@ -41,7 +41,7 @@
             </div> -->
         </nav>
     </div>
-    <!-- MAPA RESTAURANTE -->
+    <!-- MAPAS RESTAURANTE -->
     <div class="region-rest">
         <div class="widget-rest" id="salon">
             <table>
@@ -74,8 +74,8 @@
                     <td></td>
                     <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
                     <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
-                    <!-- <td></td>
-                    <td></td> -->
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -87,56 +87,24 @@
                     <td></td>
                     <td colspan="2"><div class="cont"><button></button></div></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
-                    <td></td> -->
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="2"><div class="cont"><button></button></div></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -158,18 +126,45 @@
                 </tr>
                 <tr>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
                     <td></td>
+                </tr>
+                <tr>
                     <td></td>
+                    <td colspan="3"><div class="cont"><button></button></div></td>
                     <td></td>
+                    <td><div class="cont"><button></button></div></td>
                     <td></td>
+                    <td colspan="2"><div class="cont"><button></button></div></td>
                     <td></td>
+                    <td colspan="3"><div class="cont"><button></button></div></td>
                     <td></td>
+                </tr>
+                <tr>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair rotar"></i></div></td>
                     <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
+                    <td><div class="cont"><i class="fa-solid fa-chair"></i></div></td>
                     <td></td>
                 </tr>
                 <tr>

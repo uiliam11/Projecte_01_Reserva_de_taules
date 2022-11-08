@@ -93,6 +93,10 @@ body {
     align-items: center;
 }
 
+.rotar {
+    transform: rotate(180deg);
+}
+
 /* CLASES SALON */
 .region-rest #salon tr, .region-rest #salon td {
     position: relative;
