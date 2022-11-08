@@ -63,14 +63,20 @@ body {
 
 
 /* REGION MAPA RESTAURANTE */
+
+
 /* CLASES GLOBALES */
+
 .region-rest {
     position: relative;
     width: 100%;
     padding: 40px;
     height: calc(100vh - 150px);
 }
+
+
 /* FONDO DE LAS TABLAS */
+
 .region-rest .widget-rest {
     position: relative;
     width: 100%;
@@ -80,49 +86,77 @@ body {
     border-radius: 20px;
     display: flex;
 }
+
+
 /* ESTRUCTURA TABLA */
+
 .region-rest .widget-rest table {
     position: relative;
     width: 100%;
     padding: 30px;
 }
+
+
 /* CENTRAR EN LOS TD */
+
 .region-rest .widget-rest .cont {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 /* CLASES SALON */
-.region-rest #salon tr, .region-rest #salon td {
+
+.region-rest #salon tr,
+.region-rest #salon td {
     position: relative;
     color: white;
     height: 11.1%;
     width: 7.14%;
 }
+
 .region-rest #salon .cont button {
     width: 100%;
     height: 43px;
     border-radius: 10px;
 }
+
 .region-rest #salon i {
     font-size: 25px;
 }
 
+
 /* CLASES TERRAZA */
-.region-rest #terraza tr, .region-rest #terraza td {
+
+.region-rest #terraza tr,
+.region-rest #terraza td {
     position: relative;
     color: white;
-    height: 14.28%;
+    height: 11.10%;
     width: 9.09%;
 }
+
 .region-rest #terraza .cont button {
     width: 100%;
     height: 43px;
     border-radius: 10px;
 }
+
 .region-rest #terraza i {
     font-size: 25px;
+}
+
+.rotar180 {
+    transform: rotate(180deg);
+}
+
+.rotar90 {
+    transform: rotate(90deg);
+}
+
+.rotar270 {
+    transform: rotate(270deg);
 }
 
 
