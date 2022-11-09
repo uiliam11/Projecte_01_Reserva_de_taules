@@ -39,8 +39,8 @@
                 <li><a id="btn_terraza" href="#">Terraza</a></li>
                 <li><a id="btn_privada-1" href="#">Sala Privada 1</a></li>
                 <li><a id="btn_privada-2" href="#">Sala Privada 2</a></li>
-                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i
-                            class="fa-solid fa-right-from-bracket"></i></a></li>
+                <li><a id="estadisticas" href="./estadisticas.php"><i class="fa-solid fa-book"></i></a></li>
+                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
             <!-- <div id="nav-container">
                 <div class="toggle-icon">
@@ -51,6 +51,7 @@
             </div> -->
         </nav>
     </div>
+    
     <!-- MAPAS RESTAURANTE -->
     <div class="region-rest">
         <div class="widget-rest" id="salon">

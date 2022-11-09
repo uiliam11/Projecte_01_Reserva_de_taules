@@ -5,8 +5,7 @@ function login($username, $password) {
     session_start();
 
     if (!$conexion) {
-        echo "ERROR DE CONEXION CON LA BASE DE DATOS";
-        echo "<a href='../index.php'>Volver</a>";
+        echo "<script>location.href = '../login.php?errorConexion=true';</script>";
         die;
     }
 
@@ -49,4 +48,12 @@ function validarSesion() {
     if (!isset($_SESSION['username_admin'])) {
         echo "<script>window.location.href = '../index.php?error=errorSesion';</script>";
     }
+}
+
+function getReservas() {
+    require_once '../config/conexion.php';
+
+    $sql = "SELECT * FROM `tbl_mesa` INNER JOIN `tbl_reserva` ON tbl_mesa.id_mesa = tbl_reserva.id_mesa;";
+    $listado_estadisticas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+    return $listado_estadisticas;
 }

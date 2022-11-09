@@ -43,7 +43,7 @@ body {
     margin: 0px 10px;
 }
 
-.region-navbar .widget-navbar ul li.justify-end {
+.region-navbar .widget-navbar .justify-end {
     margin-left: auto;
 }
 
