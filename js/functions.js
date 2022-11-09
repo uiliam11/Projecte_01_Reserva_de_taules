@@ -18,6 +18,10 @@ var terraza = document.getElementById('terraza');
 
 
 // Abrir modal
+
+
+// enviar id mesa
+
 $(document).ready(function() {
     $('.trigger').on('click', function() {
         $('.modal-wrapper').toggleClass('open');
@@ -25,8 +29,18 @@ $(document).ready(function() {
         return false;
     });
 });
-
-// enviar id mesa
+$("button").click(function() {
+    var mesa = $(this).val();
+    const input = document.createElement("input")
+    input.type = "hidden";
+    input.name = "mesa"
+    input.value = mesa;
+    const form = document.querySelector('#form1');
+    form.insertAdjacentElement("afterbegin", input);
+});
+// 
+// codigo = 
+// ;
 
 
 // 

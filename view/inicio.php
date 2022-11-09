@@ -19,7 +19,6 @@
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="../css/inicioStyles.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="../css/style.css">
     <!--  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -88,16 +87,15 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><div class="cont"><button id="1" class="btn-close trigger"></button></div></td>
+                    <td><div class="cont"><button id="1"  value="1" class="btn-close trigger"  ></button></div></td>
                     <td></td>
-                    <td><div class="cont"><button id="2" class="btn-close trigger"></button></div></td>
+                    <td><div class="cont"><button id="2" value="2" class="btn-close trigger"></button></div></td>
                     <td></td>
                     <td><div class="cont"><button id="3" class="btn-close trigger"></button></div></td>
                     <td></td>
-                    <td colspan="2"><div class="cont"><button></button></div></td>
+                    <td colspan="2"><div class="cont"><button id="4" class="btn-close trigger"></button></div></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="2"><div class="cont"><button id="5" class="btn-close trigger"></button></div></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -336,7 +334,7 @@
                 <div class="good-job">
                     <!-- CONTENIDO -->
                     <h1>Reserva!</h1>
-                    <form action="../functions/actualizar.php" method="post">
+                    <form action="../functions/actualizar.php"  method="post" id="form1">
                     <label>Nombre</label>
                     <input type="text" name="nombre">
                     <br>
@@ -348,10 +346,9 @@
                 <br>
                 <select name="select">
                     <option value="Libre" selected>Libre</option>
-                    <option value="Ocupado  ">Ocupado</option>
+                    <option value="Ocupado">Ocupado</option>
                     <option value="mantenimiento">Mantenimiento</option>
                 </select>
-                <input type="hidden" name="id_mesa" id="id_mesa>
                 <br>
                 <button type="submit">Enviar</button>
                 <br>
@@ -368,3 +365,4 @@
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <script src="../js/functions.js"></script>
 </html>
+
