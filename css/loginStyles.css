@@ -24,6 +24,10 @@ button {
     outline: none;
 }
 
+.loginBTN {
+    width: 50%;
+}
+
 
 /* ---- particles.js container ---- */
 
