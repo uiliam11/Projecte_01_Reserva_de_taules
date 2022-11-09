@@ -91,7 +91,7 @@
                     <td></td>
                     <td><div class="cont"><button id="2" value="2" class="btn-close trigger"></button></div></td>
                     <td></td>
-                    <td><div class="cont"><button id="3" class="btn-close trigger"></button></div></td>
+                    <td><div class="cont"><button id="3" value="3" class="btn-close trigger"></button></div></td>
                     <td></td>
                     <td colspan="2"><div class="cont"><button id="4" class="btn-close trigger"></button></div></td>
                     <td></td>
