@@ -104,22 +104,22 @@
                 <tr>
                     <td></td>
                     <td>
-                        <div class="cont"><button  value="1" class="btn-close trigger"></button></div>
+                        <div class="cont"><button value="1" class="btn-close trigger" ></button></div>
                     </td>
                     <td></td>
                     <td>
-                        <div class="cont"><button id="2" class="btn-close trigger"></button></div>
+                        <div class="cont"><button value="2" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td>
-                        <div class="cont"><button id="3" class="btn-close trigger"></button></div>
+                        <div class="cont"><button value="3" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td colspan="2">
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="4" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
-                    <td colspan="2"><div class="cont"><button id="5" class="btn-close trigger"></button></div></td>
+                    <td colspan="2"><div class="cont"><button value="5" class="btn-close trigger"></button></div></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -204,19 +204,19 @@
                 <tr>
                     <td></td>
                     <td colspan="3">
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="6" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td>
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="7" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td colspan="2">
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="8" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td colspan="3">
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="9" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                 </tr>
@@ -311,11 +311,11 @@
                 <tr>
                     <td></td>
                     <td>
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="10" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td colspan="2">
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="11" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td></td>
@@ -324,7 +324,7 @@
                     </td>
                     </td>
                     <td>
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="12" class="btn-close trigger"></button></div>
                     </td>
                     <td>
                         <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
@@ -389,11 +389,11 @@
                 <tr>
                     <td></td>
                     <td colspan="2">
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="13" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td>
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="14" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td></td>
@@ -476,7 +476,7 @@
                         <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
                     </td>
                     <td rowspan="5">
-                        <div class="cont"><button class="mesasLargas"></button></div>
+                        <div class="cont"><button value="15" class="mesasLargas btn-close trigger"></button></div>
                     </td>
                     <td>
                         <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
@@ -487,7 +487,7 @@
                         <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
                     </td>
                     <td rowspan="5">
-                        <div class="cont"><button class="mesasLargas"></button></div>
+                        <div class="cont"><button value="16" class="mesasLargas btn-close trigger"></button></div>
                     </td>
                     <td>
                         <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
@@ -678,14 +678,14 @@
                         <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
                     </td>
                     <td colspan="4">
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="17" class="btn-close trigger"></button></div>
                     </td>
                     <td>
                         <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
                     </td>
                     <td></td>
                     <td>
-                        <div class="cont"><button></button></div>
+                        <div class="cont"><button value="18" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td></td>
@@ -774,22 +774,8 @@
                     <h1>Reservas</h1>
                     <br>
                     <br>
-                    <form action="../functions/actualizar.php" method="post" id="form1">
-                        <!-- <label>Nombre</label>
-                        <input type="text" name="nombre">
-                        <br>
-                        <label>Apellido</label>
-                        <input type="text" name="apellido">
-                        <br>
-                        <label>Telefono</label>
-                        <input type="text" name="tel">
-                        <br>
-                        <input type="hidden" name="id_mesa" id="id_mesa">
-                        <br>
-                        <button type=" submit">Enviar</button>
-                        <br> -->
                         <div class="login-box">
-                            <form>
+                            <form action="../functions/actualizar.php" method="POST" id="form1">
                                 <div class="user-box">
                                     <input type="text" name="nombre" required="">
                                     <label>Nombre</label>
@@ -802,7 +788,7 @@
                                     <input type="tel" name="tel" required="">
                                     <label>Telefono</label>
                                 </div>
-                                <button type=" submit">Enviar</button>
+                                <button type="submit">Enviar</button>
                                 <select name="select">
                                 <option value="Libre">Value 1</option>
                                 <option value="Ocupado" selected>Value 2</option>
