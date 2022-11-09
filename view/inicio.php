@@ -104,7 +104,7 @@
                 <tr>
                     <td></td>
                     <td>
-                        <div class="cont"><button  value="1" class="btn-close trigger"></button></div>
+                        <div class="cont"><button value="1" class="btn-close trigger"></button></div>
                     </td>
                     <td></td>
                     <td>
@@ -119,7 +119,9 @@
                         <div class="cont"><button></button></div>
                     </td>
                     <td></td>
-                    <td colspan="2"><div class="cont"><button id="5" class="btn-close trigger"></button></div></td>
+                    <td colspan="2">
+                        <div class="cont"><button id="5" class="btn-close trigger"></button></div>
+                    </td>
                 </tr>
                 <tr>
                     <td></td>
@@ -774,43 +776,43 @@
                     <h1>Reservas</h1>
                     <br>
                     <br>
-                    <form action="../functions/actualizar.php" method="post" id="form1">
-                        <!-- <label>Nombre</label>
-                        <input type="text" name="nombre">
-                        <br>
-                        <label>Apellido</label>
-                        <input type="text" name="apellido">
-                        <br>
-                        <label>Telefono</label>
-                        <input type="text" name="tel">
-                        <br>
-                        <input type="hidden" name="id_mesa" id="id_mesa">
-                        <br>
-                        <button type=" submit">Enviar</button>
-                        <br> -->
-                        <div class="login-box">
-                            <form>
-                                <div class="user-box">
-                                    <input type="text" name="nombre" required="">
-                                    <label>Nombre</label>
-                                </div>
-                                <div class="user-box">
-                                    <input type="text" name="apellido" required="">
-                                    <label>Apellido</label>
-                                </div>
-                                <div class="user-box">
-                                    <input type="tel" name="tel" required="">
-                                    <label>Telefono</label>
-                                </div>
-                                <button type=" submit">Enviar</button>
-                                <select name="select">
-                                <option value="Libre">Value 1</option>
-                                <option value="Ocupado" selected>Value 2</option>
-                                <option value="value3">Value 3</option>
-                                </select>
-                            </form>
-                        </div>
-                    </form>
+                    <div class="login-box">
+                        <form action="../functions/actualizar.php" method="post" id="form1">
+                            <div class="user-box">
+                                <input type="text" name="nombre" required="">
+                                <label>Nombre</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="apellido" required="">
+                                <label>Apellido</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="tel" name="tel" required="">
+                                <label>Telefono</label>
+                            </div>
+                            <a class="btnReservar" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Reservar
+                            </a>
+                            <a class="btnLiberar" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Liberar
+                            </a>
+                            <a class="btnAveriado" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Averiado
+                            </a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -822,4 +824,3 @@
 <script src="../js/functions.js"></script>
 
 </html>
-
