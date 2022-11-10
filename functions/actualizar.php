@@ -11,8 +11,8 @@ if(isset($_POST['Ocupado'])){
     $disponibilidad = 'Ocupado';
 }elseif(isset($_POST['Libre'])){
     $disponibilidad = 'Libre';
-}elseif(isset($_POST['Avariado'])){
-    $disponibilidad = 'Avariado';
+}elseif(isset($_POST['Averiado'])){
+    $disponibilidad = 'Averiado';
 }
 
 
