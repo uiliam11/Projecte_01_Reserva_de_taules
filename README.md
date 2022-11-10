@@ -21,4 +21,4 @@ Els usuaris ja estan creats a la base de dades (com si vinguessin d'una altra BD
 * Para poder entrar se necesitara tener un usuario en la base de datos.
 
 
-⌨️ con ❤️ por [Alejandro Lay](https://github.com/AlejandroLay), [Uíliam Mateo](https://github.com/uiliam11), [Alex Muga](https://github.com/MuGaTy7) 😊
+⌨️ con ❤️ por [Alejandro Lay](https://github.com/AlejandroLay), [Uíliam Mateu](https://github.com/uiliam11), [Alex Muga](https://github.com/MuGaTy7) 😊
