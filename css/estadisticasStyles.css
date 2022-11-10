@@ -35,6 +35,7 @@ body {
     position: relative;
     display: flex;
     width: 100%;
+    margin: 0;
 }
 
 .region-navbar .widget-navbar ul li {
@@ -85,10 +86,23 @@ body {
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media (max-width: 1120px) {
+    .region-rest .widget-rest table {
+        min-width: 960px!important;
+    }
 }
 
 .region-rest .widget-rest .container {
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /* ESTRUCTURA TABLA */
@@ -97,6 +111,19 @@ body {
     position: relative;
     width: 100%;
     padding: 30px;
+    margin-bottom: 0;
+    --bs-table-bg: #ffffff;
+    --bs-table-striped-bg: #443E53;
+    --bs-table-striped-color: rgb(255, 255, 255);
+    --bs-table-active-bg: #bad726;
+    --bs-table-active-color: rgb(250, 246, 251);
+    --bs-table-hover-color: rgb(255, 255, 255);
+    color: #F6F7FC;
+    border-color: #373b3e;
+}
+
+@media (max-width: 1120px) {
+
 }
 
 

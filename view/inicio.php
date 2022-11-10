@@ -778,18 +778,18 @@
                     <div class="login-box">
                         <form action="../functions/actualizar.php" method="post" id="form1">
                             <div class="user-box">
-                                <input type="text" name="nombre" required="">
+                                <input type="text" id="nombre" name="nombre" required="">
                                 <label>Nombre</label>
                             </div>
                             <div class="user-box">
-                                <input type="text" name="apellido" required="">
+                                <input type="text" id="apellidos" name="apellido" required="">
                                 <label>Apellido</label>
                             </div>
                             <div class="user-box">
-                                <input type="text" name="tel" required="">
+                            <input type="tel" id="telefono" name="tel" required="">
                                 <label>Telefono</label>
                             </div>
-                            <button type="submit" id="Ocu" value="Ocupado" name="Ocupado" class="btnReservar button_modal">
+                            <button type="submit" id="Ocu" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
                                 <span></span>
                                 <span></span>
                                 <span></span>
