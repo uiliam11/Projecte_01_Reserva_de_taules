@@ -13,7 +13,37 @@ var btn_privada_2 = document.getElementById('btn_privada-2');
 
 // DEFINIR TODAS LAS VARIABLES DE LAS DIFERENTES TABLAS DE INICIO
 var salon = document.getElementById('salon');
-var terraza = document.getElementById('terraza'); 
+var terraza = document.getElementById('terraza');
+
+
+
+// Abrir modal
+
+
+// enviar id mesa
+
+$(document).ready(function() {
+    $('.trigger').on('click', function() {
+        $('.modal-wrapper').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        return false;
+    });
+});
+$("button").click(function() {
+    var mesa = $(this).val();
+    const input = document.createElement("input")
+    input.type = "hidden";
+    input.name = "mesa"
+    input.value = mesa;
+    const form = document.querySelector('#form1');
+    form.insertAdjacentElement("afterbegin", input);
+});
+// 
+// codigo = 
+// ;
+
+
+// 
 var sala_privada_1 = document.getElementById('sala-privada-1');
 var sala_privada_2 = document.getElementById('sala-privada-2');
 
@@ -43,14 +73,4 @@ btn_privada_2.addEventListener('click', () => {
     terraza.style.display = 'none';
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'flex';
-});
-
-
-// Abrir modal
-$(document).ready(function() {
-    $('.trigger').on('click', function() {
-        $('.modal-wrapper').toggleClass('open');
-        $('.page-wrapper').toggleClass('blur-it');
-        return false;
-    });
 });

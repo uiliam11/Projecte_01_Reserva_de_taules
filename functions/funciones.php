@@ -20,6 +20,8 @@ function login($username, $password) {
         foreach ($valid_login1 as $key => $user) {
             // var_dump($user);
             $_SESSION['username_admin'] = $user['username'];
+            $_SESSION['id_user'] = $user['id_user'];
+
         }
         echo "<script>location.href = '../view/inicio.php';</script>";
     } else {
