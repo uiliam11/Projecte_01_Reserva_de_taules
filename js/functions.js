@@ -74,3 +74,28 @@ btn_privada_2.addEventListener('click', () => {
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'flex';
 });
+
+// VALIDACIONS JS FORMULARIOS:
+// VALIDACION LOGIN:
+
+
+// VALIDACION RESERVAR
+function validarReserva() {
+    var validacion = true;
+    // RECOGER CAMPOS Y VALORES DE LOS CAMPOS
+    var value_nombre = document.getElementById('nombre').value;
+    var value_apellidos = document.getElementById('apellidos').value;
+    var value_telefono = document.getElementById('telefono').value;
+    // COMPROBACIONES:
+    if (value_nombre == null || value_apellidos == null || value_telefono == null) {
+        alert("Falta algún dato para hacer tu reserva, revisa el formulario y envialo de nuevo!");
+        validacion = false;
+    } else if (value_telefono.length == 9) {
+        alert("El teléfono que has introducido no es válido!");
+        validacion = false
+    }
+    
+    if (!validacion) {
+        return false;
+    }
+}

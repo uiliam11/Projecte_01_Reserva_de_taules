@@ -37,13 +37,13 @@
     </div>
     <div class="region-rest">
         <div class="widget-rest" id="salon">
-            <div style="overflow-x: auto; overflow-y: auto;" class="container">
+            <div class="container">
             <?php
                 require_once '../functions/funciones.php';
                 // Igualar la función a la variable:
                 $listado_estadisticas = getReservas();
                 // MOSTRAR DATOS EN FORMA DE TABLA:
-                echo '<table class="tablacrud table table-striped ">';
+                echo '<table class="tablacrud table table-striped table-hover">';
                     echo '<tr class="bloqueado">';
                         echo '<th>ID</th>';
                         echo '<th>UBICACIÓN</th>';
