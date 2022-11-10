@@ -118,7 +118,7 @@ button {
 
 .login-box button:hover {
     background: red;
-    color: #fff;
+    color: #17180f;
     border-radius: 5px;
     box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 100px red;
 }

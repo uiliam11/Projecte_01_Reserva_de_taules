@@ -5,10 +5,15 @@ $_SESSION['id_user'];
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $tel = $_POST['tel'];
-$disponibilidad = $_POST['select'];
 $mesa = $_POST['mesa'];
 $id_user = $_SESSION['id_user'];
-
+if(isset($_POST['Ocupado'])){
+    $disponibilidad = 'Ocupado';
+}elseif(isset($_POST['Libre'])){
+    $disponibilidad = 'Libre';
+}elseif(isset($_POST['Avariado'])){
+    $disponibilidad = 'Avariado';
+}
 
 
 if ($disponibilidad == 'Ocupado'){

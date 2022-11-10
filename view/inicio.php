@@ -775,29 +775,43 @@
                     <h1>Reservas</h1>
                     <br>
                     <br>
-                        <div class="login-box">
-                            <form action="../functions/actualizar.php" method="POST" id="form1">
-                                <div class="user-box">
-                                    <input type="text" name="nombre" required="">
-                                    <label>Nombre</label>
-                                </div>
-                                <div class="user-box">
-                                    <input type="text" name="apellido" required="">
-                                    <label>Apellido</label>
-                                </div>
-                                <div class="user-box">
-                                    <input type="tel" name="tel" required="">
-                                    <label>Telefono</label>
-                                </div>
-                                <button type="submit">Enviar</button>
-                                <select name="select">
-                                <option value="Libre">Value 1</option>
-                                <option value="Ocupado" selected>Value 2</option>
-                                <option value="value3">Value 3</option>
-                                </select>
-                            </form>
-                        </div>
-                    </form>
+                    <div class="login-box">
+                        <form action="../functions/actualizar.php" method="post" id="form1">
+                            <div class="user-box">
+                                <input type="text" name="nombre" required="">
+                                <label>Nombre</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="apellido" required="">
+                                <label>Apellido</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="tel" name="tel" required="">
+                                <label>Telefono</label>
+                            </div>
+                            <button type="submit" name="Ocupado" class="btnReservar button_modal" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Reservar
+                            </button>
+                            <button type="submit" name="Libre" class="btnLiberar button_modal" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Liberar
+                            </button>
+                            <button type="submit" name="Averiado" class="btnAveriado button_modal" href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Averiado
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -809,4 +823,3 @@
 <script src="../js/functions.js"></script>
 
 </html>
-
