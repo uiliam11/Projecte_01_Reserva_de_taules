@@ -1,10 +1,10 @@
 # CONDE DOOKU RESTAURANT 🌌🔫
 
-© Proyecto de DAW2 - Uiliam | Alejandro | Alex - 2022
+© Projecte de DAW2 - Uiliam | Alejandro | Alex - 2022
 
-## Introducción 🫡
+## Introducció 🫡
 
-Este es nuestro de proyecto de DAW2 que consiste en una intranet que usaran tanto los camararemos del restaurante como los trabajadores de manteniento que podran visualizar las incidencias que marquen los camareros como mesas y sillas rotas.
+Aquest és el nostre de projecte de DAW2 que consisteix en una intranet que usessin tant els cambrers del restaurant com els treballadors de manteniment que podran visualitzar les incidències que marquin els cambrers com a taules i cadires trencades.
 
 ## Enunciado 📋
 
@@ -16,9 +16,9 @@ La reserva d'un recurs va associada a un usuari, per tant s'ha de poder fer logi
 
 Els usuaris ja estan creats a la base de dades (com si vinguessin d'una altra BD), és a dir, no calen formularis d'alta/baixa/modificació d'usuaris.
 
-## Instrucciones de uso 📜
+## Instruccions d'ús 📜
 
-* Para poder entrar se necesitara tener un usuario en la base de datos.
+* Per a poder entrar es necessités tenir un usuari en la base de dades.
 
 
-⌨️ con ❤️ por [Alejandro Lay](https://github.com/AlejandroLay), [Uíliam Mateu](https://github.com/uiliam11), [Alex Muga](https://github.com/MuGaTy7) 😊
+⌨️ amb ❤️ per [Alejandro Lay](https://github.com/AlejandroLay), [Uíliam Mateu](https://github.com/uiliam11), [Alex Muga](https://github.com/MuGaTy7) 😊
