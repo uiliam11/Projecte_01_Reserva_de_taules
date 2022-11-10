@@ -31,7 +31,6 @@
                     <input type="password" name="password" required="">
                     <label>Contraseña</label>
                 </div>
-                <small>¡Comprueba que has introduccido bien el mail y la contraseña!</small>
                 <br>
                 <button type="submit">Entrar</button>
                 <br>
@@ -41,7 +40,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="./js/loginAnimation.js"></script>
-<script src="./js/loginValidation.js"></script>
 
 
 </html>
