@@ -789,7 +789,7 @@
                             <input type="tel" id="telefono" name="tel" required="">
                                 <label>Telefono</label>
                             </div>
-                            <button type="submit" id="Ocu" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
+                            <button type="submit" id="Ocu" name="Ocupado" value="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
                                 <span></span>
                                 <span></span>
                                 <span></span>
