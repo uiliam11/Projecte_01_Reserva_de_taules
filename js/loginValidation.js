@@ -1,23 +1,31 @@
-function validar() {
-    user = document.getElementById('usuario').value
-    pass = document.getElementById('contraseña').value
-    mensaje = document.getElementById('mensaje')
+const user = document.querySelector('#username');
+const pass = document.querySelector('#password');
 
-    if (user == '' && pass == '') {
-        alert("EMAIL Y CONTRASEÑA OBLIGATORIO");
-        return false
-    } else if (user == '') {
-        alert("EMAIL OBLIGATORIO");
-        return false
-    } else if (pass == '') {
-        alert("CONTRASEÑA OBLIGATORIA");
-        return false
-    } else if (pass.length < 8) {
-        alert("LA CONTRASEÑA TIENE QUE TENER 8 CARACTERES");
-        return false;
+
+const checkUser = () => {
+    let valid = false;
+    const username = user.value.trim();
+    if (!isRequired(username)) {
+        showError(user, 'El número de teléfono no puede estar vacío');
+    } else if (!isTelfValid(username)) {
+        showError(user, 'Número de teléfono no valido')
+    } else {
+        showSuccess(user);
+        valid = true;
     }
-    if (pass.length > 8) {
-        alert("LA CONTRASEÑA TIENE QUE TENER 8 CARACTERES");
-        return false;
+    return valid;
+};
+
+const checkPass = () => {
+    let valid = false;
+    const password = pass.value.trim();
+    if (!isRequired(password)) {
+        showError(pass, 'El número de teléfono no puede estar vacío');
+    } else if (!isTelfValid(password)) {
+        showError(pass, 'Número de teléfono no valido')
+    } else {
+        showSuccess(pass);
+        valid = true;
     }
-}
+    return valid;
+};
