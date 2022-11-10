@@ -6,7 +6,7 @@
 
 Este es nuestro de proyecto de DAW2 que consiste en una intranet que usaran tanto los camararemos del restaurante como los trabajadores de manteniento que podran visualizar las incidencias que marquen los camareros como mesas y sillas rotas.
 
-## Enunciado
+## Enunciado 📋
 
 Creació d'un lloc web desde zero. El disseny gràfic no és gaire important (no hi ha temps), però el lloc ha de fer servir un full d'estils i ser tot homogeni. Es tracta d'un lloc web que aniria integrat en una intranet, on els cambrers d'un restaurant poden veure la disponibilitat de taules i llocs que té cada taula així com sales i la seva capacitat (3 terrasses, 2 menjadors, 4 sales privades, ...), i reservar-los.
 
