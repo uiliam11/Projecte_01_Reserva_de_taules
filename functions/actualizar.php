@@ -1,22 +1,26 @@
 <?php 
 require "../config/conexion.php";
 session_start();
+
+// Recoger variables tanto de POST como de la SESSION
 $_SESSION['id_user'];
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $tel = $_POST['tel'];
 $mesa = $_POST['mesa'];
 $id_user = $_SESSION['id_user'];
-if(isset($_POST['Ocupado'])){
+
+// Receoger la varibale disponibilidad:
+if (isset($_POST['Ocupado'])) {
     $disponibilidad = 'Ocupado';
-}elseif(isset($_POST['Libre'])){
+} elseif(isset($_POST['Libre'])) {
     $disponibilidad = 'Libre';
-}elseif(isset($_POST['Averiado'])){
+} elseif(isset($_POST['Averiado'])) {
     $disponibilidad = 'Averiado';
 }
 
 
-if ($disponibilidad == 'Ocupado'){
+if ($disponibilidad == 'Ocupado') {
     $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
     $valid_login = mysqli_query($conexion, $query1);
     $match = $valid_login -> num_rows;
@@ -50,7 +54,7 @@ if ($disponibilidad == 'Ocupado'){
             echo "Error al insertar el  registro";
         }
     }
-}elseif($disponibilidad == 'Libre'){
+} elseif ($disponibilidad == 'Libre') {
     $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
     $valid_login = mysqli_query($conexion, $query1);
     $match = $valid_login -> num_rows;

@@ -87,11 +87,16 @@ body {
     display: flex;
 }
 
+.region-rest .widget-rest .container {
+    width: 100%;
+}
 
 /* ESTRUCTURA TABLA */
 
-.region-rest .widget-rest table {
+.region-rest .widget-rest .container table {
     position: relative;
     width: 100%;
     padding: 30px;
 }
+
+

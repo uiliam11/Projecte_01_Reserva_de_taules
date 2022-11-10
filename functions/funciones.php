@@ -53,7 +53,8 @@ function validarSesion() {
 function getReservas() {
     require_once '../config/conexion.php';
 
-    $sql = "SELECT * FROM `tbl_mesa` INNER JOIN `tbl_reserva` ON tbl_mesa.id_mesa = tbl_reserva.id_mesa;";
+    $sql = "SELECT tbl_mesa.id_mesa, `ubicacion`, `capacidad`, `nom_persona`, `telefono_persona`, `hora_inici`, `hora_fi`   FROM `tbl_mesa` INNER JOIN `tbl_reserva` ON tbl_mesa.id_mesa = tbl_reserva.id_mesa;";
     $listado_estadisticas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+    echo $sql;
     return $listado_estadisticas;
 }
