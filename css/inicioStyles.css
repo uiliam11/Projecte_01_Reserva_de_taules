@@ -533,3 +533,14 @@ a.btn {
     position: absolute;
     display: block;
 }
+
+
+/*Colores mesa*/
+
+.Ocupado {
+    background-color: red;
+}
+
+.Averiado {
+    background-color: Yellow;
+}

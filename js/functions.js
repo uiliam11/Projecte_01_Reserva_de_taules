@@ -16,10 +16,6 @@ var salon = document.getElementById('salon');
 var terraza = document.getElementById('terraza');
 
 
-
-// Abrir modal
-
-
 // enviar id mesa
 
 $(document).ready(function() {
@@ -37,11 +33,23 @@ $("button").click(function() {
     input.value = mesa;
     const form = document.querySelector('#form1');
     form.insertAdjacentElement("afterbegin", input);
-});
-// 
-// codigo = 
-// ;
+    const ocuBtn = document.querySelector("#Ocu");
+    const libBtn = document.querySelector("#Lib");
+    const aveBtn = document.querySelector("#Ave");
+    ocuBtn.addEventListener("click", function() {
+        localStorage.setItem(mesa, ocuBtn.value);
 
+    });
+    libBtn.addEventListener("click", function() {
+        localStorage.setItem(mesa, libBtn.value);
+
+    });
+    aveBtn.addEventListener("click", function() {
+        localStorage.setItem(mesa, aveBtn.value);
+
+    });
+
+});
 
 // 
 var sala_privada_1 = document.getElementById('sala-privada-1');
@@ -74,3 +82,16 @@ btn_privada_2.addEventListener('click', () => {
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'flex';
 });
+
+
+// Cambio de colores
+
+for (var i = 0, len = localStorage.length; i < len; i++) {
+    var key = localStorage.key(i);
+    var value = localStorage[key];
+    if (value == 'Ocupado') {
+        document.getElementById(key).classList.add(value);
+    } else if (value == 'Averiado') {
+        document.getElementById(key).classList.add(value);
+    }
+}
