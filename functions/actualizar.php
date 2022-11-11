@@ -65,7 +65,7 @@ if ($disponibilidad == 'Ocupado') {
         try{
             // mysqli_begin_transaction($conexion, MYSQLI_TRANS_START_READ_WRITE);
             // $stmt = mysqli_stmt_init($conexion);
-            // $sql1 = "UPDATE `tbl_reserva` SET `hora_fi`= current_timestamp() WHERE id_mesa = $mesa";
+            // $sql1 = "UPDATE `tbl_reserva` SET `hora_fi`= current_timestamp() WHERE id_mesa = $mesa and `hora_fi` is null"   ;
             // mysqli_stmt_prepare($stmt, $sql1);
             // mysqli_stmt_execute($stmt);
             // $id =mysqli_insert_id($conexion);
