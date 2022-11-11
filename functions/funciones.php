@@ -37,7 +37,7 @@ function login($username, $password) {
             }
             echo "<script>location.href = '../view/man.php';</script>";
         }else {
-            echo "<script>location.href = '../index.php';</script>";
+            echo "<script>location.href = '../index.php?errorLogin=true';</script>";
         }
     }
 }
@@ -53,7 +53,7 @@ function validarSesion() {
 function getReservas() {
     require_once '../config/conexion.php';
 
-    $sql = "SELECT tbl_mesa.id_mesa, `ubicacion`, `capacidad`, `nom_persona`, `telefono_persona`, `hora_inici`, `hora_fi`   FROM `tbl_mesa` INNER JOIN `tbl_reserva` ON tbl_mesa.id_mesa = tbl_reserva.id_mesa;";
+    $sql = "SELECT tbl_mesa.id_mesa, `ubicacion`, `capacidad`, `nom_persona`, `telefono_persona`, `hora_inici`, `hora_fi`, TIMEDIFF(`hora_fi`, `hora_inici`) FROM `tbl_mesa` INNER JOIN `tbl_reserva` ON tbl_mesa.id_mesa = tbl_reserva.id_mesa;";
     $listado_estadisticas = mysqli_fetch_all(mysqli_query($conexion, $sql));
     return $listado_estadisticas;
 }
