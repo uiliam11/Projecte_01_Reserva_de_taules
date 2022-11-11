@@ -105,6 +105,7 @@ body {
     margin: 0;
 }
 
+
 /* ESTRUCTURA TABLA */
 
 .region-rest .widget-rest .container table {
@@ -122,8 +123,4 @@ body {
     border-color: #373b3e;
 }
 
-@media (max-width: 1120px) {
-
-}
-
-
+@media (max-width: 1120px) {}

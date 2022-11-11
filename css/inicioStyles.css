@@ -4,7 +4,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* SCROLLBBAR */
+
 ::-webkit-scrollbar {
     height: 8px;
 }
