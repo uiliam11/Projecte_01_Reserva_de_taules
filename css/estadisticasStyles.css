@@ -12,6 +12,24 @@ body {
     box-sizing: border-box;
 }
 
+/* SCROLLBBAR */
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #474747b4;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(71, 71, 71, 0.259);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(10, 10, 10, 0.259);
+}
+
 .region-navbar {
     position: relative;
     width: 100%;
@@ -87,7 +105,7 @@ body {
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 34px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -112,14 +130,22 @@ body {
     width: 100%;
     padding: 30px;
     margin-bottom: 0;
-    --bs-table-bg: #ffffff;
-    --bs-table-striped-bg: #443E53;
-    --bs-table-striped-color: rgb(255, 255, 255);
+    --bs-table-bg: #e32424;
+    --bs-table-striped-bg: #ffffff;
+    --bs-table-striped-color: rgb(208, 10, 10);
     --bs-table-active-bg: #bad726;
     --bs-table-active-color: rgb(250, 246, 251);
     --bs-table-hover-color: rgb(255, 255, 255);
-    color: #F6F7FC;
+    color: #a4a4a4;
     border-color: #373b3e;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(255 255 255 / 5%);
+}
+
+.table-hover tbody tr:hover {
+    color: white;
 }
 
 @media (max-width: 1120px) {

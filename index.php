@@ -14,6 +14,8 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#bababa">
     <meta name="msapplication-TileColor" content="#bababa">
+    <!-- SWEETALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta name="theme-color" content="#bababa">
 </head>
 
@@ -31,13 +33,30 @@
                     <input type="password" name="password" required="">
                     <label>Contraseña</label>
                 </div>
-                <small>¡Comprueba que has introduccido bien el mail y la contraseña!</small>
+                <small></small>
                 <br>
                 <button type="submit">Entrar</button>
                 <br>
             </form>
         </div>
     </div>
+
+    <?php
+    if (isset($_GET['errorLogin'])) {
+        ?>
+        <script>
+        Swal.fire({
+        background:'#2b2b2b',
+        color:'white',
+        icon: 'error',
+        iconColor:'#b33838',
+        title: 'USUARIO INCORRECTO!'
+    })
+          </script>
+    <?php
+    }
+    ?>
+
 </body>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="./js/loginAnimation.js"></script>

@@ -14,10 +14,10 @@ var btn_privada_2 = document.getElementById('btn_privada-2');
 // DEFINIR TODAS LAS VARIABLES DE LAS DIFERENTES TABLAS DE INICIO
 var salon = document.getElementById('salon');
 var terraza = document.getElementById('terraza');
+var sala_privada_1 = document.getElementById('sala-privada-1');
+var sala_privada_2 = document.getElementById('sala-privada-2');
 
-
-// enviar id mesa
-
+// ABRIR MODAL RESERVAS
 $(document).ready(function() {
     $('.trigger').on('click', function() {
         $('.modal-wrapper').toggleClass('open');
@@ -25,6 +25,8 @@ $(document).ready(function() {
         return false;
     });
 });
+
+// ENVIAR ID MESA
 $("button").click(function() {
     var mesa = $(this).val();
     const input = document.createElement("input")
@@ -50,10 +52,6 @@ $("button").click(function() {
     });
 
 });
-
-// 
-var sala_privada_1 = document.getElementById('sala-privada-1');
-var sala_privada_2 = document.getElementById('sala-privada-2');
 
 btn_salon.addEventListener('click', () => {
     salon.style.display = 'flex';
@@ -83,6 +81,17 @@ btn_privada_2.addEventListener('click', () => {
     sala_privada_2.style.display = 'flex';
 });
 
+for (var i = 0, len = localStorage.length; i < len; i++) {
+    var key = localStorage.key(i);
+    var value = localStorage[key];
+    if (value == 'Ocupado') {
+        document.getElementById(key).classList.add(value);
+    } else if (value == 'Averiado') {
+        document.getElementById(key).classList.add(value);
+    }
+}
+
+// FUNCIÓN VALIDAR CAMPOS RESERVAS
 function validarReserva() {
     var validacion = true;
     // RECOGER CAMPOS Y VALORES DE LOS CAMPOS
@@ -100,14 +109,7 @@ function validarReserva() {
 
     if (!validacion) {
         return false;
-    }
-}
-for (var i = 0, len = localStorage.length; i < len; i++) {
-    var key = localStorage.key(i);
-    var value = localStorage[key];
-    if (value == 'Ocupado') {
-        document.getElementById(key).classList.add(value);
-    } else if (value == 'Averiado') {
-        document.getElementById(key).classList.add(value);
+    } else {
+        
     }
 }

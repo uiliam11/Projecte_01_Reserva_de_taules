@@ -11,5 +11,5 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
     login($username,$password);
 
 } else {
-   echo "<script>location.href = '../index.php`'</script>";
+   echo "<script>location.href = '../index.php'</script>";
 }

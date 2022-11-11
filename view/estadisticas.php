@@ -31,6 +31,7 @@
         <nav class="widget-navbar">
             <ul>
                 <li><a id="volver" href="./inicio.php"><i class="fa-solid fa-arrow-left"></i></a></li>
+                <li><a id="filtros" href="#"><i class="fa-solid fa-magnifying-glass"></i> FILTROS</a></li>
                 <li class="justify-end"><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
         </nav>
@@ -52,6 +53,7 @@
                         echo '<th>TELÉFONO</th>';
                         echo '<th>ENTRADA</th>';
                         echo '<th>SALIDA</th>';
+                        echo '<th>DURACIÓN</th>';
                     echo '</tr>';
                     foreach ($listado_estadisticas as $registro) {
                         echo "<tr>";
