@@ -40,7 +40,8 @@
                 <li><a id="btn_privada-1" href="#">Sala Privada 1</a></li>
                 <li><a id="btn_privada-2" href="#">Sala Privada 2</a></li>
                 <li><a id="estadisticas" href="./estadisticas.php"><i class="fa-solid fa-book"></i></a></li>
-                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i
+                            class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
             <!-- <div id="nav-container">
                 <div class="toggle-icon">
@@ -51,62 +52,60 @@
             </div> -->
         </nav>
     </div>
-    
+
     <!-- MAPAS RESTAURANTE -->
     <div class="region-rest">
-        <div class="widget-rest" id="salon">
-                <?php
+        <div class="widget-rest centrar-BTN-mesas" id="salon">
+            <?php
                 require_once '../config/conexion.php';
 
                 $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'salon';";
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
-                    echo "<div>";
-                    echo "<button class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<div class='separacion-BTN'>";
+                    echo "<button class='mesa btn-close trigger padding-DENTRO-btn'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
         </div>
-        <div class="widget-rest" id="terraza">
-                <?php
+        <div class="widget-rest centrar-BTN-mesas" id="terraza">
+            <?php
                 require_once '../config/conexion.php';
 
                 $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'terraza';";
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
-                    echo "<div>";
-                    echo "<button class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<div class='separacion-BTN'>";
+                    echo "<button class='mesa btn-close trigger padding-DENTRO-btn'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
         </div>
-        <div class="widget-rest" id="sala-privada-1">
-                <?php
+        <div class="widget-rest centrar-BTN-mesas" id="sala-privada-1">
+            <?php
                 require_once '../config/conexion.php';
 
                 $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'sala_privada1';";
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
-                    echo "<div>";
-                    echo "<button class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<div class='separacion-BTN'>";
+                    echo "<button class='mesa btn-close trigger padding-DENTRO-btn'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
         </div>
-        <div class="widget-rest" id="sala-privada-2">
-            <div style="padding: 30px;" class="mesas">
-                <?php
+        <div class="widget-rest centrar-BTN-mesas" id="sala-privada-2">
+            <?php
                 require_once '../config/conexion.php';
 
                 $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'sala_privada2';";
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
-                    echo "<div>";
-                    echo "<button value='".$mesas[0]."' class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<div class='separacion-BTN'>";
+                    echo "<button value='".$mesas[0]."' class='mesa btn-close trigger padding-DENTRO-btn'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
-            </div>
         </div>
     </div>
     <!-- Modal -->
@@ -144,10 +143,11 @@
                                     <label>Apellido</label>
                                 </div>
                                 <div class="user-box">
-                                <input type="tel" id="telefono" name="tel" required="">
+                                    <input type="tel" id="telefono" name="tel" required="">
                                     <label>Telefono</label>
                                 </div>
-                                <button type="submit" id="Ocu" value="Ocupado" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
+                                <button type="submit" id="Ocu" value="Ocupado" name="Ocupado"
+                                    onclick="return validarReserva()" class="btnReservar button_modal" href="#">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -157,7 +157,8 @@
                             </div>
                             <!-- LIBERAR -->
                             <div id="liberar">
-                                <button type="submit" id="Lib" value="Libre" name="Libre" class="btnLiberar button_modal"> 
+                                <button type="submit" id="Lib" value="Libre" name="Libre"
+                                    class="btnLiberar button_modal">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -167,7 +168,8 @@
                             </div>
                             <!-- AVERIADO -->
                             <div id="averiado">
-                                <button type="submit" id="Ave" value="Averiado" name="Averiado" class="btnAveriado button_modal">
+                                <button type="submit" id="Ave" value="Averiado" name="Averiado"
+                                    class="btnAveriado button_modal">
                                     <span></span>
                                     <span></span>
                                     <span></span>

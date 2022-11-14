@@ -573,3 +573,19 @@ a.btn {
 .Averiado {
     background-color: Yellow;
 }
+
+
+/* CENTRAR DIV */
+
+.centrar-BTN-mesas {
+    padding: 200px;
+    justify-content: center;
+}
+
+.padding-DENTRO-btn {
+    padding: 10px;
+}
+
+.separacion-BTN {
+    padding: 15px;
+}
