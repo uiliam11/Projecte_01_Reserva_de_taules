@@ -31,26 +31,11 @@ $(document).ready(function() {
 $("button").click(function() {
     var mesa = $(this).val();
     const input = document.createElement("input")
-    input.type = "hidden";  
+    input.type = "hidden";
     input.name = "mesa"
     input.value = mesa;
     const form = document.querySelector('#form1');
     form.insertAdjacentElement("afterbegin", input);
-    const ocuBtn = document.querySelector("#Ocu");
-    const libBtn = document.querySelector("#Lib");
-    const aveBtn = document.querySelector("#Ave");
-    ocuBtn.addEventListener("click", function() {
-        localStorage.setItem(mesa, ocuBtn.value);
-
-    });
-    libBtn.addEventListener("click", function() {
-        localStorage.setItem(mesa, libBtn.value);
-
-    });
-    aveBtn.addEventListener("click", function() {
-        localStorage.setItem(mesa, aveBtn.value);
-
-    });
 
 });
 
