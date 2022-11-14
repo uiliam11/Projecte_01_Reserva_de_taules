@@ -19,7 +19,7 @@ function login($username, $password) {
     if ($match1 === 1) {
         foreach ($valid_login1 as $key => $user) {
             // var_dump($user);
-            $_SESSION['username_admin'] = $user['username'];
+            $_SESSION['username'] = $user['username'];
             $_SESSION['id_user'] = $user['id_user'];
 
         }
@@ -32,28 +32,35 @@ function login($username, $password) {
         $match = $valid_login -> num_rows;
 
         if ($match === 1) {
-            foreach ($valid_login as $key => $user) {
-                $_SESSION['id_prof'] = $user['id'];
+            foreach ($valid_login as $key => $man) {
+                $_SESSION['username'] = $man['username'];
+                $_SESSION['id_prof'] = $man['id'];
             }
             echo "<script>location.href = '../view/man.php';</script>";
         }else {
             echo "<script>location.href = '../index.php?errorLogin=true';</script>";
         }
     }
-}
+}   
 
 function validarSesion() {
     // FUNCIÓN PARA VALIDAR LA SESIÓN (INCLUIR EN CADA PÁGINA)
     session_start();
-    if (!isset($_SESSION['username_admin'])) {
+    if (!isset($_SESSION['username'])) {
         echo "<script>window.location.href = '../index.php?error=errorSesion';</script>";
     }
 }
 
-function getReservas() {
+function getReservas($id, $ubi, $client, $ocu) {
     require_once '../config/conexion.php';
 
-    $sql = "SELECT tbl_mesa.id_mesa, `ubicacion`, `capacidad`, `nom_persona`, `telefono_persona`, `hora_inici`, `hora_fi`, TIMEDIFF(`hora_fi`, `hora_inici`) FROM `tbl_mesa` INNER JOIN `tbl_reserva` ON tbl_mesa.id_mesa = tbl_reserva.id_mesa;";
+    $sql = 
+    "SELECT tbl_mesa.id_mesa, `ubicacion`, `capacidad`, `nom_persona`, `telefono_persona`, `hora_inici`, `hora_fi`, `duracion` 
+    FROM `tbl_mesa` 
+    INNER JOIN `tbl_reserva` 
+    ON tbl_mesa.id_mesa = tbl_reserva.id_mesa
+    WHERE tbl_mesa.id_mesa LIKE '%".$id."%' AND ubicacion LIKE '%".$ubi."%' AND nom_persona LIKE '%".$client."%' AND capacidad LIKE '%".$ocu."%';";
+
     $listado_estadisticas = mysqli_fetch_all(mysqli_query($conexion, $sql));
     return $listado_estadisticas;
 }
