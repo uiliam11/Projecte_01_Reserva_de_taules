@@ -19,25 +19,28 @@ var terraza = document.getElementById('terraza');
 var sala_privada_1 = document.getElementById('sala-privada-1');
 var sala_privada_2 = document.getElementById('sala-privada-2');
 
-// ABRIR MODAL RESERVAS
 $(document).ready(function() {
     $('.trigger').on('click', function() {
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         return false;
     });
+    $('.mesa-rest').on('click', function() {
+        const form = document.querySelector('#form1');
+        var mesa = $(this).val();
+        const input = document.createElement("input")
+        input.type = "hidden";
+        input.name = "mesa";
+        input.id = "deleteme";
+        input.value = mesa;
+        form.insertAdjacentElement("afterbegin", input);
+    });
+    $('#asd').on('click', function() {
+        input = document.querySelector('#deleteme');
+        input.remove();
+    });
 });
 
-// ENVIAR ID MESA
-$(".mesa").click(function() {
-    var mesa = $(this).val();
-    const input = document.createElement("input")
-    input.type = "hidden";  
-    input.name = "mesa"
-    input.value = mesa;
-    const form = document.querySelector('#form1');
-    form.insertAdjacentElement("afterbegin", input);
-});
 
 btn_salon.addEventListener('click', () => {
     salon.style.display = 'flex';

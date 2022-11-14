@@ -62,7 +62,7 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
@@ -75,7 +75,7 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
@@ -88,7 +88,7 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
@@ -102,7 +102,7 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button value='".$mesas[0]."' class='mesa btn-close trigger'>".$mesas[0]."</button>";
+                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
                     echo "</div>";
                 }
                 ?>
@@ -118,7 +118,7 @@
     <div class="modal-wrapper">
         <div class="modal">
             <div class="head">
-                <a class="btn-close trigger" href="#">
+                <a class="btn-close trigger" id="asd" href="#">
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </a>
             </div>
