@@ -68,7 +68,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/ocupado-2.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '4') {
@@ -77,7 +77,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/ocupado-4.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '6') {
@@ -86,7 +86,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/ocupado-6.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '10') {
@@ -95,7 +95,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/ocupado-10.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '12') {
@@ -104,7 +104,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/ocupado-12.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
                         } 
                     }
                 }
@@ -123,7 +123,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/ocupado-2.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '4') {
@@ -132,7 +132,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/ocupado-4.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '6') {
@@ -141,7 +141,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/ocupado-6.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '10') {
@@ -150,7 +150,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/ocupado-10.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '12') {
@@ -159,7 +159,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/ocupado-12.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
                         } 
                     }
                 }
@@ -178,7 +178,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/ocupado-2.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '4') {
@@ -187,7 +187,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/ocupado-4.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '6') {
@@ -196,7 +196,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/ocupado-6.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '10') {
@@ -205,7 +205,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/ocupado-10.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '12') {
@@ -214,7 +214,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/ocupado-12.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
                         } 
                     }
                 }
@@ -233,7 +233,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/ocupado-2.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '4') {
@@ -242,7 +242,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/ocupado-4.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '6') {
@@ -251,7 +251,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/ocupado-6.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '10') {
@@ -260,7 +260,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/ocupado-10.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
                         } 
                     }
                     if ($mesas[2] == '12') {
@@ -269,7 +269,7 @@
                         } elseif ($mesas[3] == 'Ocupado') {
                             echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/ocupado-12.png' alt=''></button>";
                         } else if ($mesas[3] == 'Averiado') {
-                            echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                            echo "<button value='".$mesas[0]."' disabled class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
                         } 
                     }
                 }

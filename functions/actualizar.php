@@ -10,6 +10,10 @@ $mesa = $_POST['mesa'];
 $capa = $_POST['capa'];
 $id_user = $_SESSION['id_user'];
 
+if (isset($_POST['Averiado'])) {
+    $descripcion = $_POST['desc'];
+}
+
 // Recoger la varibale disponibilidad:
 if (isset($_POST['Ocupado'])) {
     $disponibilidad = 'Ocupado';
@@ -64,7 +68,7 @@ if ($disponibilidad == 'Ocupado') {
         try{
             mysqli_begin_transaction($conexion, MYSQLI_TRANS_START_READ_WRITE);
             $stmt = mysqli_stmt_init($conexion);
-            $sql1 = "INSERT INTO `tbl_incidencia` (`id_inc`, `desc_inc`, `id_man_fk`, `id_user_fk`, `id_mesa_fk`) VALUES (null, '')";
+            $sql1 = "INSERT INTO `tbl_incidencia` (`id_inc`, `desc_inc`, `solu_inc`, `id_man_fk`, `id_user_fk`, `id_mesa_fk`) VALUES (null, '$descripcion', null, null, ".$_SESSION['id_user'].", $mesa)";
             mysqli_stmt_prepare($stmt, $sql1);
             mysqli_stmt_execute($stmt);
 
