@@ -19,7 +19,7 @@ function login($username, $password) {
     if ($match1 === 1) {
         foreach ($valid_login1 as $key => $user) {
             // var_dump($user);
-            $_SESSION['username'] = $user['username'];
+            $_SESSION['username_user'] = $user['username'];
             $_SESSION['id_user'] = $user['id_user'];
 
         }
@@ -33,8 +33,8 @@ function login($username, $password) {
 
         if ($match === 1) {
             foreach ($valid_login as $key => $man) {
-                $_SESSION['username'] = $man['username'];
-                $_SESSION['id_prof'] = $man['id'];
+                $_SESSION['username_man'] = $man['username'];
+                $_SESSION['id_man'] = $man['id'];
             }
             echo "<script>location.href = '../view/man.php';</script>";
         }else {
@@ -43,10 +43,18 @@ function login($username, $password) {
     }
 }   
 
-function validarSesion() {
+function validarSesionUser() {
     // FUNCIÓN PARA VALIDAR LA SESIÓN (INCLUIR EN CADA PÁGINA)
     session_start();
-    if (!isset($_SESSION['username'])) {
+    if (!isset($_SESSION['username_user'])) {
+        echo "<script>window.location.href = '../index.php?error=errorSesion';</script>";
+    }
+}
+
+function validarSesionMan() {
+    // FUNCIÓN PARA VALIDAR LA SESIÓN (INCLUIR EN CADA PÁGINA)
+    session_start();
+    if (!isset($_SESSION['username_man'])) {
         echo "<script>window.location.href = '../index.php?error=errorSesion';</script>";
     }
 }

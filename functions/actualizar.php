@@ -20,12 +20,11 @@ if (isset($_POST['Ocupado'])) {
 
 
 if ($disponibilidad == 'Ocupado') {
-
    $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
     $valid_login = mysqli_query($conexion, $query1);
     $match = $valid_login -> num_rows;
     if ($match === 1){
-        echo "La mesa ya está ocupada";
+        echo "<script>location.href = '../view/inicio.php?mesaYaOcupada=true'</script>";
     }else{
         mysqli_autocommit($conexion,false);
         try{
@@ -45,7 +44,7 @@ if ($disponibilidad == 'Ocupado') {
             }
             mysqli_commit($conexion);
             mysqli_stmt_close($stmt);
-            echo "<script>location.href = '../view/inicio.php'</script>";
+            echo "<script>location.href = '../view/inicio.php?reservadaOk=true'</script>";
 
         }
         catch(Exception $e){
@@ -65,7 +64,20 @@ if ($disponibilidad == 'Ocupado') {
         try{
             mysqli_begin_transaction($conexion, MYSQLI_TRANS_START_READ_WRITE);
             $stmt = mysqli_stmt_init($conexion);
-            $sql1 = "";
+            $sql1 = "INSERT INTO `tbl_incidencia` (`id_inc`, `desc_inc`, `id_man_fk`, `id_user_fk`, `id_mesa_fk`) VALUES";
+            mysqli_stmt_prepare($stmt, $sql1);
+            mysqli_stmt_execute($stmt);
+
+            $stmt = mysqli_stmt_init($conexion);
+            $sql2 = "UPDATE `tbl_mesa` SET `disponibilidad`='$disponibilidad' WHERE id_mesa = $mesa";
+            mysqli_stmt_prepare($stmt, $sql2);
+            mysqli_stmt_execute($stmt);
+            if (0 === error_reporting()) {
+                return false;
+            }
+            mysqli_commit($conexion);
+            mysqli_stmt_close($stmt);
+            echo "<script>location.href = '../view/inicio.php?averiadaOk=true'</script>";
 
         } catch(Exception $e){
             mysqli_rollback($conexion);
@@ -78,7 +90,7 @@ if ($disponibilidad == 'Ocupado') {
     $valid_login = mysqli_query($conexion, $query1);
     $match = $valid_login -> num_rows;
     if ($match === 1){
-        echo "La mesa ya está Libre";
+        echo "<script>location.href = '../view/inicio.php?mesaYaLibre=true'</script>";
     }else{
         mysqli_autocommit($conexion,false);
         try{
@@ -97,7 +109,7 @@ if ($disponibilidad == 'Ocupado') {
             }
             mysqli_commit($conexion);
             mysqli_stmt_close($stmt);
-            echo "<script>location.href = '../view/inicio.php'</script>";
+            echo "<script>location.href = '../view/inicio.php?liberadaOk=true'</script>";
         }
         catch(Exception $e){
             mysqli_rollback($conexion);

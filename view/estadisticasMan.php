@@ -25,7 +25,7 @@
 <body>
     <?php
     require_once '../functions/funciones.php';
-    validarSesion();
+    validarSesionMan();
     ?>
     
     <!-- NAVBAR -->
