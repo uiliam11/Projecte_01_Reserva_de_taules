@@ -3,6 +3,7 @@ window.onload = function() {
     terraza.style.display = 'none';
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'none';
+    btn_filtros.style.display = 'flex';
     div_filtros.style.display = 'none';
 }
 
@@ -28,7 +29,7 @@ $(document).ready(function() {
 });
 
 // ENVIAR ID MESA
-$("button").click(function() {
+$(".mesa").click(function() {
     var mesa = $(this).val();
     const input = document.createElement("input")
     input.type = "hidden";  
@@ -36,22 +37,6 @@ $("button").click(function() {
     input.value = mesa;
     const form = document.querySelector('#form1');
     form.insertAdjacentElement("afterbegin", input);
-    const ocuBtn = document.querySelector("#Ocu");
-    const libBtn = document.querySelector("#Lib");
-    const aveBtn = document.querySelector("#Ave");
-    ocuBtn.addEventListener("click", function() {
-        localStorage.setItem(mesa, ocuBtn.value);
-
-    });
-    libBtn.addEventListener("click", function() {
-        localStorage.setItem(mesa, libBtn.value);
-
-    });
-    aveBtn.addEventListener("click", function() {
-        localStorage.setItem(mesa, aveBtn.value);
-
-    });
-
 });
 
 btn_salon.addEventListener('click', () => {
@@ -82,15 +67,15 @@ btn_privada_2.addEventListener('click', () => {
     sala_privada_2.style.display = 'flex';
 });
 
-for (var i = 0, len = localStorage.length; i < len; i++) {
-    var key = localStorage.key(i);
-    var value = localStorage[key];
-    if (value == 'Ocupado') {
-        document.getElementById(key).classList.add(value);
-    } else if (value == 'Averiado') {
-        document.getElementById(key).classList.add(value);
-    }
-}
+// for (var i = 0, len = localStorage.length; i < len; i++) {
+//     var key = localStorage.key(i);
+//     var value = localStorage[key];
+//     if (value == 'Ocupado') {
+//         document.getElementById(key).classList.add(value);
+//     } else if (value == 'Averiado') {
+//         document.getElementById(key).classList.add(value);
+//     }
+// }
 
 // FUNCIÓN VALIDAR CAMPOS RESERVAS
 function validarReserva() {
@@ -121,3 +106,36 @@ function abrirFiltros() {
 
     div_filtros.classList.toggle('mostrar_filtros');
 }
+
+
+// BOTONES DEL MODAL
+var btn_reservar = document.getElementById('btn_reservar');
+var btn_liberar = document.getElementById('btn_liberar');
+var btn_averiado = document.getElementById('btn_averiado');
+
+// DIV'S DEL MODAL
+var reservar = document.getElementById('reservar');
+var liberar = document.getElementById('liberar');
+var averiado = document.getElementById('averiado');
+
+reservar.style.display = 'none';
+liberar.style.display = 'none';
+averiado.style.display = 'none';
+
+btn_reservar.addEventListener('click', () => {
+    reservar.style.display = 'block';
+    liberar.style.display = 'none';
+    averiado.style.display = 'none';
+});
+
+btn_liberar.addEventListener('click', () => {
+    reservar.style.display = 'none';
+    liberar.style.display = 'block';
+    averiado.style.display = 'none';
+});
+
+btn_averiado.addEventListener('click', () => {
+    reservar.style.display = 'none';
+    liberar.style.display = 'none';
+    averiado.style.display = 'block';
+});
