@@ -772,44 +772,56 @@
             <div class="content">
                 <div class="good-job">
                     <!-- CONTENIDO -->
-                    <h1>Reservas</h1>
-                    <br>
-                    <br>
+                    <h1>Restaurante Dooku</h1>
                     <div class="login-box">
-                        <form action="../functions/actualizar.php" method="post" id="form1">
-                            <div class="user-box">
-                                <input type="text" id="nombre" name="nombre" required="">
-                                <label>Nombre</label>
+                        <div class="selecion-modal">
+                            <button id="btn_reservar">Reservar</button>
+                            <button id="btn_liberar">Liberar</button>
+                            <button id="btn_averiado">Averiado</button>
+                        </div>
+                        <form action="../functions/actualizar.php" method="POST" id="form1">
+                            <!-- RESERVAR -->
+                            <div id="reservar">
+                                <div class="user-box">
+                                    <input type="text" id="nombre" name="nombre" required="">
+                                    <label>Nombre</label>
+                                </div>
+                                <div class="user-box">
+                                    <input type="text" id="apellidos" name="apellido" required="">
+                                    <label>Apellido</label>
+                                </div>
+                                <div class="user-box">
+                                <input type="tel" id="telefono" name="tel" required="">
+                                    <label>Telefono</label>
+                                </div>
+                                <button type="submit" id="Ocu" value="Ocupado" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Reservar
+                                </button>
                             </div>
-                            <div class="user-box">
-                                <input type="text" id="apellidos" name="apellido" required="">
-                                <label>Apellido</label>
+                            <!-- LIBERAR -->
+                            <div id="liberar">
+                                <button type="submit" id="Lib" value="Libre" name="Libre" class="btnLiberar button_modal"> 
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Liberar
+                                </button>
                             </div>
-                            <div class="user-box">
-                            <input type="tel" id="telefono" name="tel" required="">
-                                <label>Telefono</label>
+                            <!-- AVERIADO -->
+                            <div id="averiado">
+                                <button type="submit" id="Ave" value="Averiado" name="Averiado" class="btnAveriado button_modal">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Averiado
+                                </button>
                             </div>
-                            <button type="submit" id="Ocu" value="Ocupado" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Reservar
-                            </button>
-                            <button type="submit" id="Lib" value="Libre" name="Libre" class="btnLiberar button_modal"> 
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Liberar
-                            </button>
-                            <button type="submit" id="Ave" value="Averiado" name="Averiado" class="btnAveriado button_modal">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Averiado
-                            </button>
                         </form>
                     </div>
                 </div>

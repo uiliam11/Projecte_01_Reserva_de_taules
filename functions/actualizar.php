@@ -54,6 +54,8 @@ if ($disponibilidad == 'Ocupado') {
             echo "Error al insertar el  registro";
         }
     }
+} elseif ($disponibilidad == 'Averiado') {
+    
 } elseif ($disponibilidad == 'Libre') {
     $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
     $valid_login = mysqli_query($conexion, $query1);

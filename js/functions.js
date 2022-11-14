@@ -3,6 +3,7 @@ window.onload = function() {
     terraza.style.display = 'none';
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'none';
+    btn_filtros.style.display = 'flex';
     div_filtros.style.display = 'none';
 }
 
@@ -121,3 +122,36 @@ function abrirFiltros() {
 
     div_filtros.classList.toggle('mostrar_filtros');
 }
+
+
+// BOTONES DEL MODAL
+var btn_reservar = document.getElementById('btn_reservar');
+var btn_liberar = document.getElementById('btn_liberar');
+var btn_averiado = document.getElementById('btn_averiado');
+
+// DIV'S DEL MODAL
+var reservar = document.getElementById('reservar');
+var liberar = document.getElementById('liberar');
+var averiado = document.getElementById('averiado');
+
+reservar.style.display = 'none';
+liberar.style.display = 'none';
+averiado.style.display = 'none';
+
+btn_reservar.addEventListener('click', () => {
+    reservar.style.display = 'block';
+    liberar.style.display = 'none';
+    averiado.style.display = 'none';
+});
+
+btn_liberar.addEventListener('click', () => {
+    reservar.style.display = 'none';
+    liberar.style.display = 'block';
+    averiado.style.display = 'none';
+});
+
+btn_averiado.addEventListener('click', () => {
+    reservar.style.display = 'none';
+    liberar.style.display = 'none';
+    averiado.style.display = 'block';
+});
