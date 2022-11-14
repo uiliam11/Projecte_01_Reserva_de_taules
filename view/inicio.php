@@ -62,7 +62,51 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
+                    if ($mesas[2] == '2') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-2.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-2.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-2.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '4') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-4.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-4.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-4.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '6') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-6.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-6.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-6.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '10') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-10.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-10.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-10.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '12') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-12.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-12.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-12.png' alt=''></button>";
+                        } 
+                    }
                     echo "</div>";
                 }
                 ?>
@@ -75,7 +119,51 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
+                    if ($mesas[2] == '2') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-2.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-2.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-2.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '4') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-4.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-4.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-4.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '6') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-6.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-6.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-6.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '10') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-10.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-10.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-10.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '12') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-12.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-12.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-12.png' alt=''></button>";
+                        } 
+                    }
                     echo "</div>";
                 }
                 ?>
@@ -88,7 +176,51 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
+                    if ($mesas[2] == '2') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-2.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-2.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-2.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '4') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-4.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-4.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-4.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '6') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-6.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-6.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-6.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '10') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-10.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-10.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-10.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '12') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-12.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-12.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-12.png' alt=''></button>";
+                        } 
+                    }
                     echo "</div>";
                 }
                 ?>
@@ -102,7 +234,51 @@
                 $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
                 foreach ($listado_mesas as $mesas) {
                     echo "<div>";
-                    echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'>".$mesas[0]."</button>";
+                    if ($mesas[2] == '2') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-2.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-2.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-2.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '4') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-4.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-4.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-4.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '6') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-6.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-6.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-6.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '10') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-10.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-10.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-10.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '12') {
+                        if ($mesas[3] == 'Libre') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/libre-12.png' alt=''></button>";
+                        } elseif ($mesas[3] == 'Ocupado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/ocupado-12.png' alt=''></button>";
+                        } else if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest btn-close trigger'><img src='../img/averiado-12.png' alt=''></button>";
+                        } 
+                    }
                     echo "</div>";
                 }
                 ?>
@@ -136,15 +312,15 @@
                             <!-- RESERVAR -->
                             <div id="reservar">
                                 <div class="user-box">
-                                    <input type="text" id="nombre" name="nombre" required="">
+                                    <input type="text" id="nombre" name="nombre">
                                     <label>Nombre</label>
                                 </div>
                                 <div class="user-box">
-                                    <input type="text" id="apellidos" name="apellido" required="">
+                                    <input type="text" id="apellidos" name="apellido">
                                     <label>Apellido</label>
                                 </div>
                                 <div class="user-box">
-                                <input type="tel" id="telefono" name="tel" required="">
+                                <input type="tel" id="telefono" name="tel">
                                     <label>Telefono</label>
                                 </div>
                                 <button type="submit" id="Ocu" value="Ocupado" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
@@ -167,6 +343,10 @@
                             </div>
                             <!-- AVERIADO -->
                             <div id="averiado">
+                            <div class="user-box">
+                                    <input type="text" id="desc" name="desc" placeholder="Escriba un resumen de la avería...">
+                                    <label>Descripción avería</label>
+                                </div>
                                 <button type="submit" id="Ave" value="Averiado" name="Averiado" class="btnAveriado button_modal">
                                     <span></span>
                                     <span></span>
