@@ -7,6 +7,7 @@ $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $tel = $_POST['tel'];
 $mesa = $_POST['mesa'];
+$capa = $_POST['capa'];
 $id_user = $_SESSION['id_user'];
 
 // Recoger la varibale disponibilidad:
@@ -20,11 +21,10 @@ if (isset($_POST['Ocupado'])) {
 
 
 if ($disponibilidad == 'Ocupado') {
-   $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
-    $valid_login = mysqli_query($conexion, $query1);
-    $match = $valid_login -> num_rows;
-    if ($match === 1){
-        echo "<script>location.href = '../view/inicio.php?mesaYaOcupada=true'</script>";
+    $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa";
+    $ocup = mysqli_fetch_all(mysqli_query($conexion, $query1));
+    if ($ocup[0][3] === "Ocupado" or $capa > $ocup[0][2]  ){
+        echo "<script>location.href = '../view/inicio.php?errorOcupacion=true'</script>";
     }else{
         mysqli_autocommit($conexion,false);
         try{
@@ -64,7 +64,7 @@ if ($disponibilidad == 'Ocupado') {
         try{
             mysqli_begin_transaction($conexion, MYSQLI_TRANS_START_READ_WRITE);
             $stmt = mysqli_stmt_init($conexion);
-            $sql1 = "INSERT INTO `tbl_incidencia` (`id_inc`, `desc_inc`, `id_man_fk`, `id_user_fk`, `id_mesa_fk`) VALUES";
+            $sql1 = "INSERT INTO `tbl_incidencia` (`id_inc`, `desc_inc`, `id_man_fk`, `id_user_fk`, `id_mesa_fk`) VALUES (null, '')";
             mysqli_stmt_prepare($stmt, $sql1);
             mysqli_stmt_execute($stmt);
 

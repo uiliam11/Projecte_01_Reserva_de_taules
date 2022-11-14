@@ -70,15 +70,6 @@ btn_privada_2.addEventListener('click', () => {
     sala_privada_2.style.display = 'flex';
 });
 
-// for (var i = 0, len = localStorage.length; i < len; i++) {
-//     var key = localStorage.key(i);
-//     var value = localStorage[key];
-//     if (value == 'Ocupado') {
-//         document.getElementById(key).classList.add(value);
-//     } else if (value == 'Averiado') {
-//         document.getElementById(key).classList.add(value);
-//     }
-// }
 
 // FUNCIÓN VALIDAR CAMPOS RESERVAS
 function validarReserva() {
