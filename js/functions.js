@@ -3,7 +3,8 @@ window.onload = function() {
     terraza.style.display = 'none';
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'none';
-    div_filtros.style.display = 'none';
+    // btn_filtros.style.display = 'flex';
+    // div_filtros.style.display = 'none';
 }
 
 // VARIBALES DE LOS BOTONES DE LOS MAPAS
@@ -20,24 +21,40 @@ var sala_privada_2 = document.getElementById('sala-privada-2');
 
 // ABRIR MODAL RESERVAS
 $(document).ready(function() {
+
     $('.trigger').on('click', function() {
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         return false;
     });
+    $('.mesa').on('click', function() {
+        const form = document.querySelector('#form1');
+        var mesa = $(this).val();
+        const input = document.createElement("input")
+        input.type = "hidden";
+        input.name = "mesa";
+        input.id = "deleteme";
+        input.value = mesa;
+        form.insertAdjacentElement("afterbegin", input);
+    });
+    $('#asd').on('click', function() {
+        input = document.querySelector('#deleteme');
+        input.remove();
+    });
 });
+
 
 // ENVIAR ID MESA
-$("button").click(function() {
-    var mesa = $(this).val();
-    const input = document.createElement("input")
-    input.type = "hidden";
-    input.name = "mesa"
-    input.value = mesa;
-    const form = document.querySelector('#form1');
-    form.insertAdjacentElement("afterbegin", input);
+// $(".mesa").click(function() {
+//     var mesa = $(this).val();
+//     const input = document.createElement("input")
+//     input.type = "hidden";
+//     input.name = "mesa"
+//     input.value = mesa;
+//     const form = document.querySelector('#form1');
+//     form.insertAdjacentElement("afterbegin", input);
+// });
 
-});
 
 btn_salon.addEventListener('click', () => {
     salon.style.display = 'flex';
@@ -67,15 +84,15 @@ btn_privada_2.addEventListener('click', () => {
     sala_privada_2.style.display = 'flex';
 });
 
-for (var i = 0, len = localStorage.length; i < len; i++) {
-    var key = localStorage.key(i);
-    var value = localStorage[key];
-    if (value == 'Ocupado') {
-        document.getElementById(key).classList.add(value);
-    } else if (value == 'Averiado') {
-        document.getElementById(key).classList.add(value);
-    }
-}
+// for (var i = 0, len = localStorage.length; i < len; i++) {
+//     var key = localStorage.key(i);
+//     var value = localStorage[key];
+//     if (value == 'Ocupado') {
+//         document.getElementById(key).classList.add(value);
+//     } else if (value == 'Averiado') {
+//         document.getElementById(key).classList.add(value);
+//     }
+// }
 
 // FUNCIÓN VALIDAR CAMPOS RESERVAS
 function validarReserva() {
@@ -101,8 +118,41 @@ function validarReserva() {
 }
 
 function abrirFiltros() {
-    var btn_filtros = document.getElementById('filtros');
+    // var btn_filtros = document.getElementById('filtros');
     var div_filtros = document.getElementById('div-filtros');
 
     div_filtros.classList.toggle('mostrar_filtros');
 }
+
+
+// BOTONES DEL MODAL
+var btn_reservar = document.getElementById('btn_reservar');
+var btn_liberar = document.getElementById('btn_liberar');
+var btn_averiado = document.getElementById('btn_averiado');
+
+// DIV'S DEL MODAL
+var reservar = document.getElementById('reservar');
+var liberar = document.getElementById('liberar');
+var averiado = document.getElementById('averiado');
+
+reservar.style.display = 'none';
+liberar.style.display = 'none';
+averiado.style.display = 'none';
+
+btn_reservar.addEventListener('click', () => {
+    reservar.style.display = 'block';
+    liberar.style.display = 'none';
+    averiado.style.display = 'none';
+});
+
+btn_liberar.addEventListener('click', () => {
+    reservar.style.display = 'none';
+    liberar.style.display = 'block';
+    averiado.style.display = 'none';
+});
+
+btn_averiado.addEventListener('click', () => {
+    reservar.style.display = 'none';
+    liberar.style.display = 'none';
+    averiado.style.display = 'block';
+});
