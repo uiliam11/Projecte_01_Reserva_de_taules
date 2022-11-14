@@ -128,25 +128,31 @@
                     <h1>Restaurante Dooku</h1>
                     <div class="login-box">
                         <div class="selecion-modal">
-                            <button id="btn_reservar">Reservar</button>
-                            <button id="btn_liberar">Liberar</button>
-                            <button id="btn_averiado">Averiado</button>
+                            <button id="btn_reservar" class="button_modal">Reservar</button>
+                            <button id="btn_liberar" class="button_modal">Liberar</button>
+                            <button id="btn_averiado" class="button_modal">Averiado</button>
                         </div>
                         <form action="../functions/actualizar.php" method="POST" id="form1">
                             <!-- RESERVAR -->
                             <div id="reservar">
                                 <div class="user-box">
-                                    <input type="text" id="nombre" name="nombre" required="">
+                                    <input type="text" id="nombre" name="nombre">
                                     <label>Nombre</label>
                                 </div>
                                 <div class="user-box">
-                                    <input type="text" id="apellidos" name="apellido" required="">
+                                    <input type="text" id="apellidos" name="apellido">
                                     <label>Apellido</label>
                                 </div>
                                 <div class="user-box">
-                                <input type="tel" id="telefono" name="tel" required="">
+                                <input type="tel" id="telefono" name="tel">
                                     <label>Telefono</label>
                                 </div>
+                                <div class="user-box">
+                                <input type="text" id="capa" name="capa">
+                                    <label>Personas</label>
+                                </div>
+                                <div class="user-box">
+
                                 <button type="submit" id="Ocu" value="Ocupado" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
                                     <span></span>
                                     <span></span>
@@ -154,6 +160,8 @@
                                     <span></span>
                                     Reservar
                                 </button>
+                                </div>
+
                             </div>
                             <!-- LIBERAR -->
                             <div id="liberar">

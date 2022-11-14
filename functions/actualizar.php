@@ -7,6 +7,7 @@ $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $tel = $_POST['tel'];
 $mesa = $_POST['mesa'];
+$capa = $_POST['capa'];
 $id_user = $_SESSION['id_user'];
 
 // Recoger la varibale disponibilidad:
@@ -20,8 +21,7 @@ if (isset($_POST['Ocupado'])) {
 
 
 if ($disponibilidad == 'Ocupado') {
-
-   $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
+    $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
     $valid_login = mysqli_query($conexion, $query1);
     $match = $valid_login -> num_rows;
     if ($match === 1){
@@ -29,9 +29,6 @@ if ($disponibilidad == 'Ocupado') {
     }else{
         mysqli_autocommit($conexion,false);
         try{
-            
-
-
             mysqli_begin_transaction($conexion, MYSQLI_TRANS_START_READ_WRITE);
             $stmt = mysqli_stmt_init($conexion);
             $sql1 = "INSERT INTO `tbl_reserva`(`id_reserva`, `id_user`, `id_mesa`, `nom_persona`, `apellido_persona`, `telefono_persona`, `hora_inici`, `hora_fi`) VALUES (null, $id_user, $mesa, '$nombre', '$apellido','$tel', current_timestamp(), null)";

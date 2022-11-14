@@ -3,8 +3,8 @@ window.onload = function() {
     terraza.style.display = 'none';
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'none';
-    // btn_filtros.style.display = 'flex';
-    // div_filtros.style.display = 'none';
+    btn_filtros.style.display = 'flex';
+    div_filtros.style.display = 'none';
 }
 
 // VARIBALES DE LOS BOTONES DE LOS MAPAS
@@ -21,7 +21,6 @@ var sala_privada_2 = document.getElementById('sala-privada-2');
 
 // ABRIR MODAL RESERVAS
 $(document).ready(function() {
-
     $('.trigger').on('click', function() {
         $('.modal-wrapper').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
@@ -42,18 +41,6 @@ $(document).ready(function() {
         input.remove();
     });
 });
-
-
-// ENVIAR ID MESA
-// $(".mesa").click(function() {
-//     var mesa = $(this).val();
-//     const input = document.createElement("input")
-//     input.type = "hidden";
-//     input.name = "mesa"
-//     input.value = mesa;
-//     const form = document.querySelector('#form1');
-//     form.insertAdjacentElement("afterbegin", input);
-// });
 
 
 btn_salon.addEventListener('click', () => {
@@ -84,15 +71,6 @@ btn_privada_2.addEventListener('click', () => {
     sala_privada_2.style.display = 'flex';
 });
 
-// for (var i = 0, len = localStorage.length; i < len; i++) {
-//     var key = localStorage.key(i);
-//     var value = localStorage[key];
-//     if (value == 'Ocupado') {
-//         document.getElementById(key).classList.add(value);
-//     } else if (value == 'Averiado') {
-//         document.getElementById(key).classList.add(value);
-//     }
-// }
 
 // FUNCIÓN VALIDAR CAMPOS RESERVAS
 function validarReserva() {
@@ -118,7 +96,7 @@ function validarReserva() {
 }
 
 function abrirFiltros() {
-    // var btn_filtros = document.getElementById('filtros');
+    var btn_filtros = document.getElementById('filtros');
     var div_filtros = document.getElementById('div-filtros');
 
     div_filtros.classList.toggle('mostrar_filtros');
