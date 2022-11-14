@@ -3,6 +3,7 @@ window.onload = function() {
     terraza.style.display = 'none';
     sala_privada_1.style.display = 'none';
     sala_privada_2.style.display = 'none';
+    div_filtros.style.display = 'none';
 }
 
 // VARIBALES DE LOS BOTONES DE LOS MAPAS
@@ -30,7 +31,7 @@ $(document).ready(function() {
 $("button").click(function() {
     var mesa = $(this).val();
     const input = document.createElement("input")
-    input.type = "hidden";
+    input.type = "hidden";  
     input.name = "mesa"
     input.value = mesa;
     const form = document.querySelector('#form1');
@@ -110,6 +111,13 @@ function validarReserva() {
     if (!validacion) {
         return false;
     } else {
-        
+
     }
+}
+
+function abrirFiltros() {
+    var btn_filtros = document.getElementById('filtros');
+    var div_filtros = document.getElementById('div-filtros');
+
+    div_filtros.classList.toggle('mostrar_filtros');
 }

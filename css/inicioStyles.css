@@ -71,6 +71,8 @@ body {
     background-color: #17180f;
     border-radius: 10px;
     padding: 7px 13px;
+    display: flex;
+    align-items: center;
 }
 
 .region-navbar .widget-navbar ul li a {

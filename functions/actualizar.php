@@ -34,7 +34,7 @@ if ($disponibilidad == 'Ocupado') {
             $sql1 = "INSERT INTO `tbl_reserva`(`id_reserva`, `id_user`, `id_mesa`, `nom_persona`, `apellido_persona`, `telefono_persona`, `hora_inici`, `hora_fi`) VALUES (null, $id_user, $mesa, '$nombre', '$apellido','$tel', current_timestamp(), null)";
             mysqli_stmt_prepare($stmt, $sql1);
             mysqli_stmt_execute($stmt);
-            $id =mysqli_insert_id($conexion);
+            $id = mysqli_insert_id($conexion);
     
             $stmt = mysqli_stmt_init($conexion);
             $sql2 = "UPDATE `tbl_mesa` SET `disponibilidad`='$disponibilidad' WHERE id_mesa = $mesa";
@@ -65,7 +65,7 @@ if ($disponibilidad == 'Ocupado') {
         try{
             mysqli_begin_transaction($conexion, MYSQLI_TRANS_START_READ_WRITE);
             $stmt = mysqli_stmt_init($conexion);
-            $sql1 = "UPDATE `tbl_reserva` SET `hora_fi`= current_timestamp() WHERE id_mesa = $mesa and `hora_fi` is null";
+            $sql1 = "UPDATE `tbl_reserva` SET `hora_fi`= current_timestamp(), `duracion` = TIMEDIFF(`hora_fi`, `hora_inici`)    WHERE id_mesa = $mesa and `hora_fi` is null";
             mysqli_stmt_prepare($stmt, $sql1);
             mysqli_stmt_execute($stmt);
             $id =mysqli_insert_id($conexion);

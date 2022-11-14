@@ -32,16 +32,20 @@
     <div class="region-navbar">
         <nav class="widget-navbar">
             <ul>
-                <li><a id="volver" href="./inicio.php"><i class="fa-solid fa-arrow-left"></i></a></li>
+                <div class="justify-start">
+                    <li><a id="volver" href="./man.php"><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <li><p style="color: white;">Bienvenido <b><?php echo $_SESSION['username'] ?></b></p></li>
+                </div>
                 <li><a id="filtros" onclick="abrirFiltros()" href="#"><i class="fa-solid fa-magnifying-glass"></i> FILTROS</a></li>
                 <form style="display: none;" id="div-filtros" method="get">
-                    <li><input class="form-control form-control-sm filter" id="filtro-id" name="filtro-id" type="text" placeholder="Mesa"></li> <!--FILTRO ID DE LA MESA-->
-                    <li><input class="form-control form-control-sm filter" id="filtro-ubi" name="filtro-ubi" type="text" placeholder="Ubicación"></li> <!--FILTRO UBICACIÓN-->
-                    <li><input class="form-control form-control-sm filter" id="filtro-client" name="filtro-client" type="text" placeholder="Cliente"></li> <!--FILTRO CLIENTE-->
-                    <li><input class="form-control form-control-sm filter" id="filtro-ocu" name="filtro-ocu" type="text" placeholder="Ocupación"></li> <!--FILTRO OCUPACIÓN-->
+                    <li><input class="form-control form-control-sm filter" id="filtro-user" name="filtro-user" type="text" placeholder="Camarero"></li> <!--FILTRO ID DE LA MESA-->
+                    <li><input class="form-control form-control-sm filter" id="filtro-mesa" name="filtro-mesa" type="text" placeholder="ID de la mesa"></li> <!--FILTRO UBICACIÓN-->
+                    <li><input class="form-control form-control-sm filter" id="filtro-ocu" name="filtro-ocu" type="text" placeholder="Ocupación total"></li> <!--FILTRO OCUPACIÓN-->
                     <li><input class="enviar" name="btn_enviar" type="submit" value="Enviar"></li>
                 </form>
-                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                <div class="justify-end">
+                    <li><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                </div>
             </ul>
         </nav>
     </div>
@@ -68,7 +72,7 @@
                 // MOSTRAR DATOS EN FORMA DE TABLA:
                 echo '<table class="tablacrud table table-striped table-hover">';
                     echo '<tr class="bloqueado">';
-                        echo '<th>MESA</th>';
+                        echo '<th>ID</th>';
                         echo '<th>UBICACIÓN</th>';
                         echo '<th>CAPACIDAD</th>';
                         echo '<th>CLIENTE</th>';
