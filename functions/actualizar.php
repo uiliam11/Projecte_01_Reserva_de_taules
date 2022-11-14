@@ -19,13 +19,11 @@ if (isset($_POST['Ocupado'])) {
     $disponibilidad = 'Averiado';
 }
 
-
 if ($disponibilidad == 'Ocupado') {
-    $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa  AND disponibilidad = '$disponibilidad'";
-    $valid_login = mysqli_query($conexion, $query1);
-    $match = $valid_login -> num_rows;
-    if ($match === 1){
-        echo "La mesa ya está ocupada";
+    $query1 = "SELECT * FROM tbl_mesa WHERE id_mesa = $mesa";
+    $ocup = mysqli_fetch_all(mysqli_query($conexion, $query1));
+    if ($ocup[0][3] === "Ocupado" or $capa > $ocup[0][2]  ){
+        echo "<script>location.href = '../view/inicio.php?errorOcupacion=true'</script>";
     }else{
         mysqli_autocommit($conexion,false);
         try{
