@@ -292,7 +292,7 @@
             <div class="content">
                 <div class="good-job">
                     <!-- CONTENIDO -->
-                    <h1>Restaurante Dooku</h1>
+                    <h1 id="title-modal">Restaurante Dooku</h1>
                     <div class="login-box">
                         <div class="selecion-modal">
                             <button id="btn_reservar" class="button_modal">Reservar</button>
@@ -332,6 +332,7 @@
                             </div>
                             <!-- LIBERAR -->
                             <div id="liberar">
+                                <p>Este botón sirve para liberar una mesa cuando la reserva haya finalizado!</p>
                                 <button type="submit" id="Lib" value="Libre" name="Libre"
                                     class="btnLiberar button_modal">
                                     <span></span>
@@ -343,10 +344,12 @@
                             </div>
                             <!-- AVERIADO -->
                             <div id="averiado">
-                            <div class="user-box">
-                                    <input type="text" id="desc" name="desc" placeholder="Escriba un resumen de la avería...">
-                                    <label>Descripción avería</label>
+                                <p>Escriba en este formulario el problema que haya encontrado:</p>
+                                <div style="margin-top: 30px;" class="user-box">
+                                    <input type="text" id="desc" name="desc">
+                                    <label>Descripción</label>
                                 </div>
+                                <p>Utilize este botón para indicar al equipo de mantenimiento que hay una incidencia con una mesa!</p>
                                 <button type="submit" id="Ave" value="Averiado" name="Averiado" class="btnAveriado button_modal">
                                     <span></span>
                                     <span></span>

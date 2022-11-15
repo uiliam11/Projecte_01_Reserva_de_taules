@@ -32,7 +32,10 @@
     <div class="region-navbar">
         <nav class="widget-navbar">
             <ul>
-                <li><a id="volver" href="./inicio.php"><i class="fa-solid fa-arrow-left"></i></a></li>
+                <div class="justify-start">
+                    <li><a id="volver" href="./inicio.php"><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <li><p style="color: white;">Bienvenido <b><?php echo $_SESSION['username_user'] ?></b></p></li>
+                </div>
                 <li><a id="filtros" onclick="abrirFiltros()" href="#"><i class="fa-solid fa-magnifying-glass"></i> FILTROS</a></li>
                 <form style="display: none;" id="div-filtros" method="get">
                     <li><input class="form-control form-control-sm filter" id="filtro-id" name="filtro-id" type="text" placeholder="Mesa"></li> <!--FILTRO ID DE LA MESA-->
@@ -41,7 +44,9 @@
                     <li><input class="form-control form-control-sm filter" id="filtro-ocu" name="filtro-ocu" type="text" placeholder="Ocupación"></li> <!--FILTRO OCUPACIÓN-->
                     <li><input class="enviar" name="btn_enviar" type="submit" value="Enviar"></li>
                 </form>
-                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                <div class="justify-end">
+                    <li><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
+                </div>
             </ul>
         </nav>
     </div>

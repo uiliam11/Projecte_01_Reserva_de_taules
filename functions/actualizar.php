@@ -3,15 +3,22 @@ require "../config/conexion.php";
 session_start();
 
 // Recoger variables tanto de POST como de la SESSION
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$tel = $_POST['tel'];
 $mesa = $_POST['mesa'];
-$capa = $_POST['capa'];
-$id_user = $_SESSION['id_user'];
+
+if (isset($_POST['Ocupado'])) {
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $tel = $_POST['tel'];
+    $capa = $_POST['capa'];
+    $id_user = $_SESSION['id_user'];
+}
 
 if (isset($_POST['Averiado'])) {
     $descripcion = $_POST['desc'];
+}
+
+if (isset($_POST['Incidencia'])) {
+    $solucion = $_POST['solu_inc'];
 }
 
 // Recoger la varibale disponibilidad:
@@ -21,6 +28,8 @@ if (isset($_POST['Ocupado'])) {
     $disponibilidad = 'Libre';
 } elseif(isset($_POST['Averiado'])) {
     $disponibilidad = 'Averiado';
+} elseif (isset($_POST['Incidencia'])) {
+    $disponibilidad = 'Incidencia';
 }
 
 
@@ -62,7 +71,7 @@ if ($disponibilidad == 'Ocupado') {
     $valid_login = mysqli_query($conexion, $query1);
     $match = $valid_login -> num_rows;
     if ($match === 1){
-        echo "La mesa esta averiada!";
+        echo "La mesa ya esta averiada!";
     } else {
         mysqli_autocommit($conexion,false);
         try{
@@ -79,6 +88,13 @@ if ($disponibilidad == 'Ocupado') {
             if (0 === error_reporting()) {
                 return false;
             }
+
+            // CUANDO ESTA OCUPADA Y LA AVERÍAS NO SE CIERRA LA RESERVA:
+            // $stmt = mysqli_stmt_init($conexion);
+            // $sql1 = "UPDATE `tbl_reserva` SET `hora_fi`= current_timestamp(), `duracion` = TIMEDIFF(`hora_fi`, `hora_inici`) WHERE id_mesa = $mesa and `hora_fi` is null";
+            // mysqli_stmt_prepare($stmt, $sql1);
+            // mysqli_stmt_execute($stmt);
+
             mysqli_commit($conexion);
             mysqli_stmt_close($stmt);
             echo "<script>location.href = '../view/inicio.php?averiadaOk=true'</script>";
@@ -120,6 +136,31 @@ if ($disponibilidad == 'Ocupado') {
             echo $e->getMessage(), "\n";
             echo "Error al cerrar la reserva!";
         }
+    }
+} else if ($disponibilidad == 'Incidencia') {
+    mysqli_autocommit($conexion,false);
+    try{
+        mysqli_begin_transaction($conexion, MYSQLI_TRANS_START_READ_WRITE);
+        $stmt = mysqli_stmt_init($conexion);
+        $sql1 = "UPDATE `tbl_incidencia` SET `solu_inc` = '$solucion', `id_man_fk` = ".$_SESSION['id_man']." WHERE id_mesa_fk = $mesa and `solu_inc` is null;";
+        mysqli_stmt_prepare($stmt, $sql1);
+        mysqli_stmt_execute($stmt);
+        
+        $stmt = mysqli_stmt_init($conexion);
+        $sql2 = "UPDATE `tbl_mesa` SET `disponibilidad` = 'Libre' WHERE id_mesa = $mesa";
+        mysqli_stmt_prepare($stmt, $sql2);
+        mysqli_stmt_execute($stmt);
+        if (0 === error_reporting()) {
+            return false;
+        }
+        mysqli_commit($conexion);
+        mysqli_stmt_close($stmt);
+        echo "<script>location.href = '../view/man.php?solucionadaOk=true'</script>";
+    }
+    catch(Exception $e){
+        mysqli_rollback($conexion);
+        echo $e->getMessage(), "\n";
+        echo "Error al solucionar avería!";
     }
 }
 

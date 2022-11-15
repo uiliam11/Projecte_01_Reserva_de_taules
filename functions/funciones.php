@@ -34,7 +34,7 @@ function login($username, $password) {
         if ($match === 1) {
             foreach ($valid_login as $key => $man) {
                 $_SESSION['username_man'] = $man['username'];
-                $_SESSION['id_man'] = $man['id'];
+                $_SESSION['id_man'] = $man['id_man'];
             }
             echo "<script>location.href = '../view/man.php';</script>";
         }else {
@@ -69,6 +69,20 @@ function getReservas($id, $ubi, $client, $ocu) {
     ON tbl_mesa.id_mesa = tbl_reserva.id_mesa
     WHERE tbl_mesa.id_mesa LIKE '%".$id."%' AND ubicacion LIKE '%".$ubi."%' AND nom_persona LIKE '%".$client."%' AND capacidad LIKE '%".$ocu."%';";
 
+    $listado_estadisticas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+    return $listado_estadisticas;
+}
+
+function getReservasMan($user, $mesa, $ubi) {
+    require_once '../config/conexion.php';
+
+    $sql = 
+    "SELECT `id_inc`, `desc_inc`, `solu_inc`, `id_man_fk`, `id_user_fk`, `id_mesa_fk`, `ubicacion`
+    FROM `tbl_mesa` 
+    INNER JOIN `tbl_incidencia` 
+    ON tbl_mesa.id_mesa = tbl_incidencia.id_mesa_fk
+    WHERE id_mesa LIKE '%".$mesa."%' AND ubicacion LIKE '%".$ubi."%' AND id_user_fk LIKE '%".$user."%';";
+    
     $listado_estadisticas = mysqli_fetch_all(mysqli_query($conexion, $sql));
     return $listado_estadisticas;
 }

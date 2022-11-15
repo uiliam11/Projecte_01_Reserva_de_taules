@@ -34,13 +34,13 @@
             <ul>
                 <div class="justify-start">
                     <li><a id="volver" href="./man.php"><i class="fa-solid fa-arrow-left"></i></a></li>
-                    <li><p style="color: white;">Bienvenido <b><?php echo $_SESSION['username'] ?></b></p></li>
+                    <li><p style="color: white;">Bienvenido <b><?php echo $_SESSION['username_man'] ?></b></p></li>
                 </div>
                 <li><a id="filtros" onclick="abrirFiltros()" href="#"><i class="fa-solid fa-magnifying-glass"></i> FILTROS</a></li>
                 <form style="display: none;" id="div-filtros" method="get">
                     <li><input class="form-control form-control-sm filter" id="filtro-user" name="filtro-user" type="text" placeholder="Camarero"></li> <!--FILTRO ID DE LA MESA-->
                     <li><input class="form-control form-control-sm filter" id="filtro-mesa" name="filtro-mesa" type="text" placeholder="ID de la mesa"></li> <!--FILTRO UBICACIÓN-->
-                    <li><input class="form-control form-control-sm filter" id="filtro-ocu" name="filtro-ocu" type="text" placeholder="Ocupación total"></li> <!--FILTRO OCUPACIÓN-->
+                    <li><input class="form-control form-control-sm filter" id="filtro-ubi" name="filtro-ubi" type="text" placeholder="Ubicación"></li> <!--FILTRO OCUPACIÓN-->
                     <li><input class="enviar" name="btn_enviar" type="submit" value="Enviar"></li>
                 </form>
                 <div class="justify-end">
@@ -56,35 +56,32 @@
                 require_once '../functions/funciones.php';
 
                 if (isset($_GET['btn_enviar'])) {
-                    $id = $_GET['filtro-id'];
+                    $user = $_GET['filtro-user'];
+                    $mesa = $_GET['filtro-mesa'];
                     $ubi = $_GET['filtro-ubi'];
-                    $client = $_GET['filtro-client'];
-                    $ocu = $_GET['filtro-ocu'];
                 } else {
-                    $id = '';
+                    $user = '';
+                    $mesa = '';
                     $ubi = '';
-                    $client = '';
-                    $ocu = '';
                 }
             
-                $listado_estadisticas = getReservas($id, $ubi, $client, $ocu);
+                $listado_estadisticas = getReservasMan($user, $mesa, $ubi);
 
                 // MOSTRAR DATOS EN FORMA DE TABLA:
                 echo '<table class="tablacrud table table-striped table-hover">';
                     echo '<tr class="bloqueado">';
-                        echo '<th>ID</th>';
+                        echo '<th>INCIDENCIA</th>';
+                        echo '<th>DESCRIPCIÓN</th>';
+                        echo '<th>SOLUCIÓN</th>';
+                        echo '<th>TÉCNICO</th>';
+                        echo '<th>CAMARERO</th>';
+                        echo '<th>MESA</th>';
                         echo '<th>UBICACIÓN</th>';
-                        echo '<th>CAPACIDAD</th>';
-                        echo '<th>CLIENTE</th>';
-                        echo '<th>TELÉFONO</th>';
-                        echo '<th>ENTRADA</th>';
-                        echo '<th>SALIDA</th>';
-                        echo '<th>DURACIÓN</th>';
                     echo '</tr>';
-                    foreach ($listado_estadisticas as $registro) {
+                    foreach ($listado_estadisticas as $incidencias) {
                         echo "<tr>";
-                        for ($i=0; $i < count($registro); $i++) { 
-                            echo "<td>".$registro[$i]."</td>";
+                        for ($i=0; $i < count($incidencias); $i++) { 
+                            echo "<td>".$incidencias[$i]."</td>";
                         }
                         echo "</tr>";
                     }

@@ -55,705 +55,146 @@
     <!-- MAPAS RESTAURANTE -->
     <div class="region-rest">
         <div class="widget-rest" id="salon">
-        <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><button value="1" id="1" class="btn-close trigger" ></button></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><button value="2" id="2" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><button value="3" id="3" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td colspan="2">
-                        <div class="cont"><button value="4" id="4" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td colspan="2"><div class="cont"><button value="5" id="5"  class="btn-close trigger"></button></div></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td colspan="3">
-                        <div class="cont"><button value="6" id="6"  class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><button value="7" id="7"  class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td colspan="2">
-                        <div class="cont"><button value="8" id="8"  class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td colspan="3">
-                        <div class="cont"><button value="9" id="9" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <?php
+                require_once '../config/conexion.php';
+
+                $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'salon';";
+                $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+                foreach ($listado_mesas as $mesas) {
+                    if ($mesas[2] == '2') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '4') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '6') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '10') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '12') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                        } 
+                    }
+                }
+                ?>
         </div>
         <div class="widget-rest" id="terraza">
-            <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><button value="10" id="10" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td colspan="2">
-                        <div class="cont"><button value="11" id="11" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    </td>
-                    <td>
-                        <div class="cont"><button value="12" id="12" class="btn-close trigger"></button></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td colspan="2">
-                        <div class="cont"><button value="13" id="13" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><button value="14" id="14" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <?php
+                require_once '../config/conexion.php';
+
+                $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'terraza';";
+                $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+                foreach ($listado_mesas as $mesas) {
+                    if ($mesas[2] == '2') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '4') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '6') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '10') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '12') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                        } 
+                    }
+                }
+                ?>
         </div>
         <div class="widget-rest" id="sala-privada-1">
-            <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td rowspan="5">
-                        <div class="cont"><button value="15" id="15" class="mesasLargas btn-close trigger"></button></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td rowspan="5">
-                        <div class="cont"><button value="16" id="16" class="mesasLargas btn-close trigger"></button></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <?php
+                require_once '../config/conexion.php';
+
+                $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'sala_privada1';";
+                $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+                foreach ($listado_mesas as $mesas) {
+                    if ($mesas[2] == '2') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '4') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '6') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '10') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                        } 
+                    }
+                    if ($mesas[2] == '12') {
+                        if ($mesas[3] == 'Averiado') {
+                            echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                        } 
+                    }
+                }
+                ?>
         </div>
         <div class="widget-rest" id="sala-privada-2">
-            <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar270"></i></div>
-                    </td>
-                    <td colspan="4">
-                        <div class="cont"><button value="17" id="17" class="btn-close trigger"></button></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar90"></i></div>
-                    </td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><button value="18" id="18" class="btn-close trigger"></button></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="cont"><i class="fa-solid fa-chair rotar180"></i></div>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+            <?php
+                require_once '../config/conexion.php';
+
+                $sql = "SELECT * FROM `tbl_mesa` WHERE `ubicacion` = 'sala_privada2';";
+                $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+                foreach ($listado_mesas as $mesas) {
+                    if ($mesas[2] == '2') {
+                        if ($mesas[2] == '2') {
+                            if ($mesas[3] == 'Averiado') {
+                                echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-2' src='../img/averiado-2.png' alt=''></button>";
+                            } 
+                        }
+                        if ($mesas[2] == '4') {
+                            if ($mesas[3] == 'Averiado') {
+                                echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-4' src='../img/averiado-4.png' alt=''></button>";
+                            } 
+                        }
+                        if ($mesas[2] == '6') {
+                            if ($mesas[3] == 'Averiado') {
+                                echo "<button value='".$mesas[0]."' class='mesa-rest trigger'><img class='ocu-6' src='../img/averiado-6.png' alt=''></button>";
+                            } 
+                        }
+                        if ($mesas[2] == '10') {
+                            if ($mesas[3] == 'Averiado') {
+                                echo "<button value='".$mesas[0]."' class='mesa-rest div-10 trigger'><img class='ocu-10' src='../img/averiado-10.png' alt=''></button>";
+                            } 
+                        }
+                        if ($mesas[2] == '12') {
+                            if ($mesas[3] == 'Averiado') {
+                                echo "<button value='".$mesas[0]."' class='mesa-rest div-12 trigger'><img class='ocu-12' src='../img/averiado-12.png' alt=''></button>";
+                            } 
+                        }
+                    }
+                }
+                ?>
         </div>
     </div>
     <!-- Modal -->
@@ -765,51 +206,31 @@
     <div class="modal-wrapper">
         <div class="modal">
             <div class="head">
-                <a class="btn-close trigger" href="#">
+                <a class="btn-close trigger" id="asd" href="#">
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </a>
             </div>
             <div class="content">
                 <div class="good-job">
                     <!-- CONTENIDO -->
-                    <h1>Reservas</h1>
+                    <h1 id="title-modal">Mesa</h1>
                     <br>
                     <br>
                     <div class="login-box">
                         <form action="../functions/actualizar.php" method="post" id="form1">
+                        <div id="incidencia">
                             <div class="user-box">
-                                <input type="text" id="nombre" name="nombre" required="">
-                                <label>Nombre</label>
+                                    <input type="text" id="solu_inc" name="solu_inc">
+                                    <label>Solución avería</label>
+                                </div>
+                                <button type="submit" id="Inc" value="Incidencia" name="Incidencia" class="btnLiberar button_modal">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Solucionar
+                                </button>
                             </div>
-                            <div class="user-box">
-                                <input type="text" id="apellidos" name="apellido" required="">
-                                <label>Apellido</label>
-                            </div>
-                            <div class="user-box">
-                            <input type="tel" id="telefono" name="tel" required="">
-                                <label>Telefono</label>
-                            </div>
-                            <button type="submit" id="Ocu" value="Ocupado" name="Ocupado" onclick="return validarReserva()" class="btnReservar button_modal" href="#">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Reservar
-                            </button>
-                            <button type="submit" id="Lib" value="Libre" name="Libre" class="btnLiberar button_modal"> 
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Liberar
-                            </button>
-                            <button type="submit" id="Ave" value="Averiado" name="Averiado" class="btnAveriado button_modal">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Averiado
-                            </button>
                         </form>
                     </div>
                 </div>

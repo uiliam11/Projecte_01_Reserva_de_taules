@@ -34,13 +34,14 @@ $(document).ready(function() {
         input.id = "deleteme";
         input.value = mesa;
         form.insertAdjacentElement("afterbegin", input);
+        
+        document.getElementById('title-modal').innerHTML = "Mesa " + mesa; 
     });
     $('#asd').on('click', function() {
         input = document.querySelector('#deleteme');
         input.remove();
     });
 });
-
 
 btn_salon.addEventListener('click', () => {
     salon.style.display = 'flex';
