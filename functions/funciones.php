@@ -34,7 +34,7 @@ function login($username, $password) {
         if ($match === 1) {
             foreach ($valid_login as $key => $man) {
                 $_SESSION['username_man'] = $man['username'];
-                $_SESSION['id_man'] = $man['id'];
+                $_SESSION['id_user'] = $man['id_man'];
             }
             echo "<script>location.href = '../view/man.php';</script>";
         }else {
