@@ -91,8 +91,8 @@ if ($disponibilidad == 'Ocupado') {
 
             // CUANDO ESTA OCUPADA Y LA AVERÍAS NO SE CIERRA LA RESERVA:
             // $stmt = mysqli_stmt_init($conexion);
-            // $sql1 = "UPDATE `tbl_reserva` SET `hora_fi`= current_timestamp(), `duracion` = TIMEDIFF(`hora_fi`, `hora_inici`) WHERE id_mesa = $mesa and `hora_fi` is null";
-            // mysqli_stmt_prepare($stmt, $sql1);
+            // $sql3 = "UPDATE `tbl_reserva` SET `hora_fi`= current_timestamp(), `duracion` = TIMEDIFF(`hora_fi`, `hora_inici`) WHERE id_mesa = $mesa and `hora_fi` is null";
+            // mysqli_stmt_prepare($stmt, $sql3);
             // mysqli_stmt_execute($stmt);
 
             mysqli_commit($conexion);
