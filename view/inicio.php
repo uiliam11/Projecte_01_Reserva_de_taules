@@ -40,16 +40,38 @@
                 <li><a id="btn_privada-1" href="#">Sala Privada 1</a></li>
                 <li><a id="btn_privada-2" href="#">Sala Privada 2</a></li>
                 <li><a id="estadisticas" href="./estadisticas.php"><i class="fa-solid fa-book"></i></a></li>
-                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i
-                            class="fa-solid fa-right-from-bracket"></i></a></li>
+                <!-- LIBERAR U OCUPAR TODAS LAS MESAS -->
+                <form action="../functions/selectMultiple.php" method="post">
+                    <select name="modo-option" id="modo-option">
+                        <option value="Libre">Liberar todas</option>
+                        <option value="Ocupado">Ocupar todas</option>
+                    </select>
+                    <select name="sala-option" id="sala-options">
+                        <option value="salon">Salón</option>
+                        <option value="terraza">Terraza</option>
+                        <option value="sala_privada1">Sala Privada 1</option>
+                        <option value="sala_privada2">Sala Privada 2</option>
+                    </select>
+                    <input type="submit" value="Enviar">
+                </form>
+                <!-- CAMBIAR OCUPACIÓN MESAS -->
+                <form action="../functions/cambiarOcu.php" method="post">
+                    <select name="mesas-option" id="mesas-option">
+                        <?php
+                        require_once '../config/conexion.php';
+                        $sql = "SELECT * FROM `tbl_mesa`;";
+                        $listado_mesas = mysqli_fetch_all(mysqli_query($conexion, $sql));
+
+                        foreach ($listado_mesas as $mesas) {
+                            echo "<option value='".$mesas[0]."'>".$mesas[0]."</option>";
+                        }
+                        ?>
+                    </select>
+                    <input type="number" name="ocu-option" placeholder="Nueva ocupación...">
+                    <input type="submit" value="Enviar">
+                </form>
+                <li class="justify-end"><a href="../functions/cerrarSesion.php"><i class="fa-solid fa-right-from-bracket"></i></a></li>
             </ul>
-            <!-- <div id="nav-container">
-                <div class="toggle-icon">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div> -->
         </nav>
     </div>
 

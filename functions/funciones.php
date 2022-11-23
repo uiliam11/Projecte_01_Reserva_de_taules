@@ -23,7 +23,7 @@ function login($username, $password) {
             $_SESSION['id_user'] = $user['id_user'];
 
         }
-        echo "<script>location.href = '../view/inicio.php';</script>";
+        echo "<script>location.href = '../view/val_direcciones.php';</script>";
     } else {
         
         // Sentencia para ver si ese usuario que nos han introducido es un técnico de mantenimiento
@@ -36,7 +36,7 @@ function login($username, $password) {
                 $_SESSION['username_man'] = $man['username'];
                 $_SESSION['id_man'] = $man['id_man'];
             }
-            echo "<script>location.href = '../view/man.php';</script>";
+            echo "<script>location.href = '../view/val_direcciones.php';</script>";
         }else {
             echo "<script>location.href = '../index.php?errorLogin=true';</script>";
         }
